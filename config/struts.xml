@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+	<constant name="struts.i18n.encoding" value="UTF-8" />
+	<!--
+		使用Convention插件,实现约定大于配置的零配置文件风格. 特殊的Result路径在Action类中使用@Result设定.
+	-->
+	<constant name="struts.multipart.maxSize" value="1000000000" />
+	<!-- 路径包含web的将被视为Action存在的路径来进行搜索 -->
+	<constant name="struts.convention.default.parent.package" value="app-default"/>
+	<constant name="struts.convention.package.locators" value="web" />
+	<!-- Convention默认搜索action，actions，struts，struts2.配置basePackage则只搜索该路径 -->
+	<constant name="struts.convention.package.locators.basePackage"	value="com.skss.app" />
+	<package name="app-default" extends="convention-default">
+		<!-- 开启控制台打印异常信息 -->
+		<interceptors>
+		   <interceptor-stack name="default">
+		  		<interceptor-ref name="defaultStack"></interceptor-ref>
+			    <interceptor-ref name="exception">
+				     <param name="logEnabled">true</param>
+				     <param name="logLevel">error</param>
+			    </interceptor-ref>
+		    	
+		   </interceptor-stack>
+	  </interceptors>
+	  <default-interceptor-ref name="default"></default-interceptor-ref> 
+	</package>
+</struts>    

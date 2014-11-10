@@ -1,0 +1,52 @@
+<?xml version="1.0"?>
+<project name="iframe" default="war">
+	<!--定义系统目录-->
+	<property name="src" value="src;app"/>
+	<property name="config" value="config"/>
+	<property name="classes" value="WebContent/WEB-INF/classes"/>
+	<property name="lib" value="WebContent/WEB-INF/lib"/>
+	<property name="init-db" location="init-db/init-db.xml"/>
+
+	<!--第三方jar路径-->
+	<path id="lib-classpath">
+		<fileset dir="${lib}">
+			<include name="*.jar"/>
+		</fileset>
+	</path>
+	<!--创建目录-->
+	<target name="init">
+		<mkdir dir="${classes}"/>
+	</target>
+	<!--编译java文件-->
+	<target name="compile" depends="init">
+		<javac srcdir="${src}" destdir="${classes}" includeantruntime="on">
+			<classpath refid="lib-classpath"/>
+		</javac>
+		<!--复制资源文件-->
+		<copy todir="${classes}">
+			<fileset dir="${config}"/>
+		</copy>
+		
+	</target>
+	<!--打成war包-->
+	<target name="war" depends="compile">
+		<war destfile="iframe.war" webxml="WebContent/WEB-INF/web.xml">
+			<fileset dir="WebContent" includes="*" />
+			<lib dir="${lib}"/>
+			<!--引入编译后的class文件-->
+			<classes dir="${classes}"/>
+		</war>
+	</target>
+	<!--创建初始化数据任务-->
+	<taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask" classpathref="lib-classpath"/>
+	<!--初始化数据-->
+	<target name="init-db">
+		<dbunit driver="com.mysql.jdbc.Driver"  supportBatchStatement="false"
+							url="jdbc:mysql://127.0.0.1:3306/app?useUnicode=true&amp;characterEncoding=utf-8"
+							userid="root"
+							password="root">
+							<classpath refid="lib-classpath"/>
+							<operation type="CLEAN_INSERT" src="${init-db}"/>
+						</dbunit>
+	</target>
+</project>
