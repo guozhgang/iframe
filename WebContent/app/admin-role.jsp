@@ -91,19 +91,18 @@
         function removeRole() {
         	var record = $("#build_role").datagrid("getSelected");
         	if (record) {
-        		alert(record.id);
         		$.messager.confirm("系统提示", "您确认要删除该条信息吗?", function(ok) {
         			if (ok) {
         				$.ajax({
                 			url: '${path}/role!remove.action',
                 			data: {id: record.id},
                 			dataType: 'text',
-                			type: 'text',
+                			type: 'post',
                 			success: function(r) {
                 				r = eval("("+r+")");
                 				$.messager.show({
                 					title: '系统提示',
-                					msg: data.message
+                					msg: r.message
                 				});
                 				$("#build_role").datagrid("reload");
                 			}

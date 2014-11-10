@@ -22,6 +22,11 @@ public class RoleService {
 	private MenuDao menuDao;
 
 	public void save(Role role, String menuIds) {
+		System.out.println("++"+role.getId());
+		if (null == role.getId()) {
+			System.out.println("-----");
+			role.setId(null);
+		}
 		String menus[] = menuIds.split(",");
 		if (menus.length > 0) {
 			List<Menu> menuList = new ArrayList<Menu>();
@@ -30,6 +35,7 @@ public class RoleService {
 			}
 			role.setMenuList(menuList);
 		}
+		
 		roleDao.saveRole(role);
 	}
 	

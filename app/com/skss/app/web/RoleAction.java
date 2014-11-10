@@ -19,14 +19,14 @@ public class RoleAction extends ActionUtil<Role>{
 		String menuIds = request.getParameter("menuIds");
 		Role role = roleService.findRoleByName(model);
 		if (role == null) {
-			roleService.save(model, menuIds);
+			try {
+				roleService.save(model, menuIds);
+			} catch (Exception e) {
+				// TODO: handle exception
+				this.sendMessage(false, "参数错误");
+			}
 		} else {
 			this.sendMessage(false, "角色名称已经存在!");
-		}
-		if (null != model.getId()) {
-			this.sendSuccess();
-		} else {
-			this.sendFailure();
 		}
 	}
 	public void list() {
