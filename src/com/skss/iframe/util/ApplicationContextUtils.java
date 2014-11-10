@@ -27,7 +27,7 @@ public class ApplicationContextUtils  implements ServletContextListener{
 		//服务器启动时获取工程根目录
 		application = arg0.getServletContext();
 		String path = application.getContextPath();  
-		application.setAttribute("pathdd", path);
+		application.setAttribute("path", path);
 		MenuService menuService = (MenuService)applicationContext.getBean("menuService");
 		List<Menu> list = menuService.findMenuByAsync(null);
 		System.out.println(list.size());
