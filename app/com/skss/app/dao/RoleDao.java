@@ -8,6 +8,6 @@ import com.skss.iframe.dao.BaseDao;
 @Repository
 public class RoleDao extends BaseDao<Role>{
 	public void saveRole(Role role) {
-		this.save(role);
+		this.saveOrUpdate(role);
 	}
 }

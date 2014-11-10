@@ -33,8 +33,9 @@ public class Role extends IdEntity {
 	public void setRoleName(String roleName) {
 		this.roleName = roleName;
 	}
-	@ManyToMany(fetch = FetchType.LAZY)
-	@JoinTable(name = "SS_ROLE_MENU", joinColumns = { @JoinColumn(name = "role_id", nullable = false) }, inverseJoinColumns = { @JoinColumn(name = "menu_id", nullable = false) })
+	@ManyToMany
+	@JoinTable(name = "SS_ROLE_MENU", joinColumns = { @JoinColumn(name = "role_id") }, inverseJoinColumns = { @JoinColumn(name = "menu_id") })
+	@Fetch(FetchMode.SUBSELECT)
 	public List<Menu> getMenuList() {
 		return menuList;
 	}

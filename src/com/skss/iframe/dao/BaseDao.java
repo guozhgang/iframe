@@ -73,7 +73,7 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		getCurrentSession().update(t);
 	}
 	public void saveOrUpdate(T t) {
-		getCurrentSession().saveOrUpdate(t);
+		 getCurrentSession().saveOrUpdate(t);
 	}
 	public void delete(T t) {
 		getCurrentSession().delete(t);

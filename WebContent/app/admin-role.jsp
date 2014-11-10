@@ -73,6 +73,11 @@
         	var data = $("#build_role").datagrid("getSelected");
         	if (data) {
         		$('#role_dlg').dialog('open').dialog('setTitle','编辑角色');
+        		var val = "";
+        		for (var i = 0; i < data.menuList.length; i++) {
+        			val += data.menuList[i].id + ",";
+        		}
+        		$("#role_menu").combotree("setValues", val);
             	$("#role_form").form('load', data);
                 url = "${path}/role!save.action";
         	} else {
@@ -82,6 +87,35 @@
         		});
         	}
         	
+        }
+        function removeRole() {
+        	var record = $("#build_role").datagrid("getSelected");
+        	if (record) {
+        		alert(record.id);
+        		$.messager.confirm("系统提示", "您确认要删除该条信息吗?", function(ok) {
+        			if (ok) {
+        				$.ajax({
+                			url: '${path}/role!remove.action',
+                			data: {id: record.id},
+                			dataType: 'text',
+                			type: 'text',
+                			success: function(r) {
+                				r = eval("("+r+")");
+                				$.messager.show({
+                					title: '系统提示',
+                					msg: data.message
+                				});
+                				$("#build_role").datagrid("reload");
+                			}
+                		});
+        			}
+        		});
+        	} else {
+        		$.messager.show({
+        			title:'系统提示',
+        			msg: '请先选择一条信息'
+        		});
+        	}
         }
        	function saveRole() {
        		$("#role_form").form('submit', {

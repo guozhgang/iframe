@@ -52,8 +52,6 @@
 				<prop key="hibernate.hbm2ddl.auto">${hibernate.hbm2ddl.auto}</prop>
 				<!-- session由spring托管 -->
 				<prop key="hibernate.current_session_context_class">${hibernate.current_session_context_class}</prop>	
-				<prop key="hibernate.cache.use_second_level_cache">true</prop>
-				<prop key="hibernate.cache.provider_class">org.hibernate.cache.EhCacheProvider</prop>		
 			</props>
 		</property>
 	</bean>

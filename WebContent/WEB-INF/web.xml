@@ -21,11 +21,7 @@
         org.springframework.web.util.Log4jConfigListener  
     </listener-class>  
 </listener>
-<listener>
- 	<listener-class>
- 		com.skss.iframe.util.ApplicationContextUtils
- 	</listener-class>
- </listener>
+
 
   <!-- 启动spring applicationContext -->
    <listener>
@@ -39,6 +35,11 @@
 	       classpath:applicationContext.xml
 	   </param-value>
  </context-param>
+ <listener>
+ 	<listener-class>
+ 		com.skss.iframe.util.ApplicationContextUtils
+ 	</listener-class>
+ </listener>
  <filter>
 		<filter-name>hibernateOpenSessionInViewFilter</filter-name>
 		<filter-class>org.springframework.orm.hibernate3.support.OpenSessionInViewFilter</filter-class>

@@ -24,7 +24,7 @@ public class Menu extends IdEntity{
 	private String text;
 	private String parent;
 	private String description;
-	private List<Role> roleList = new ArrayList<Role>();
+	/*private List<Role> roleList = new ArrayList<Role>();*/
 	
 	@Column(name = "node_id")
 	public String getNodeId() {
@@ -54,7 +54,7 @@ public class Menu extends IdEntity{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	@ManyToMany(mappedBy="menuList")
+/*	@ManyToMany(mappedBy="menuList")
 	@Fetch(FetchMode.SUBSELECT)
 	@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 	public List<Role> getRoleList() {
@@ -62,6 +62,6 @@ public class Menu extends IdEntity{
 	}
 	public void setRoleList(List<Role> roleList) {
 		this.roleList = roleList;
-	}
+	}*/
 	
 }

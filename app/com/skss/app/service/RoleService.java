@@ -5,14 +5,16 @@ import java.util.List;
 
 import javax.annotation.Resource;
 
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 import org.springframework.stereotype.Service;
 
 import com.skss.app.dao.MenuDao;
 import com.skss.app.dao.RoleDao;
 import com.skss.app.entity.Menu;
 import com.skss.app.entity.Role;
+import com.skss.iframe.util.ApplicationContextUtils;
 
-@Service
+@Service("roleService")
 public class RoleService {
 	@Resource
 	private RoleDao roleDao;
@@ -38,7 +40,7 @@ public class RoleService {
 	 */
 	public Role findRoleByName(Role role) {
 		String hql = "from Role r where r.roleName = '"+role.getRoleName()+"'";
-		if (null == role.getId()) {
+		if (null != role.getId()) {
 			hql += " and r.id != '" + role.getId() + "'";
 		}
 		List<Role> roles = roleDao.executeByHQL(hql);
@@ -60,5 +62,8 @@ public class RoleService {
 	 */
 	public int count() {
 		return roleDao.getCountByHql("select count(i) from Role i");
+	}
+	public void remove(Role role) {
+		roleDao.delete(role);
 	}
 }
