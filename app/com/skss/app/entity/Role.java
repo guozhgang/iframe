@@ -10,8 +10,12 @@ import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import com.skss.iframe.entity.IdEntity;
 
@@ -29,8 +33,6 @@ public class Role extends IdEntity {
 	public void setRoleName(String roleName) {
 		this.roleName = roleName;
 	}
-
-	@Cascade(value = { CascadeType.SAVE_UPDATE })
 	@ManyToMany(fetch = FetchType.LAZY)
 	@JoinTable(name = "SS_ROLE_MENU", joinColumns = { @JoinColumn(name = "role_id", nullable = false) }, inverseJoinColumns = { @JoinColumn(name = "menu_id", nullable = false) })
 	public List<Menu> getMenuList() {

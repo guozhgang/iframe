@@ -9,8 +9,12 @@ import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
+import org.hibernate.annotations.Cache;
+import org.hibernate.annotations.CacheConcurrencyStrategy;
 import org.hibernate.annotations.Cascade;
 import org.hibernate.annotations.CascadeType;
+import org.hibernate.annotations.Fetch;
+import org.hibernate.annotations.FetchMode;
 
 import com.skss.iframe.entity.IdEntity;
 @Entity
@@ -50,8 +54,9 @@ public class Menu extends IdEntity{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	@ManyToMany(mappedBy="menuList", fetch = FetchType.LAZY)
-	@Cascade(value = {CascadeType.SAVE_UPDATE})
+	@ManyToMany(mappedBy="menuList")
+	@Fetch(FetchMode.SUBSELECT)
+	@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 	public List<Role> getRoleList() {
 		return roleList;
 	}

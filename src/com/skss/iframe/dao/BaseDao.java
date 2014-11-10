@@ -102,7 +102,8 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 	@Override
 	public int getCountByHql(String hql, Object... objs) {
 		// TODO Auto-generated method stub
-		return 0;
+		Query query = getCurrentSession().createQuery(formatSQL(hql));
+		return Integer.parseInt(query.uniqueResult().toString());
 	}
 	
 	

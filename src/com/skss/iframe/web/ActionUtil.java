@@ -112,17 +112,10 @@ public class ActionUtil<M> extends ActionSupport implements ServletRequestAware,
 	public void sendJSON(List list, int total) {
 		map.put(Constant.ROWS, list);
 		map.put(Constant.TOTAL, total);
-		/*JsonConfig jsonConfg = new JsonConfig();
-		jsonConfg.registerJsonValueProcessor(Role.class, new ObjectJsonValueProcessor(new String[]{"menuList"}, Role.class));
-		JSONArray json = JSONArray.fromObject(map);
-		String dataJSON = json.toString();
-		dataJSON = dataJSON.substring(1,dataJSON.length()-1);   //符合easyui的json格式
-		
-		jsonConfg.setCycleDetectionStrategy(CycleDetectionStrategy.LENIENT);
-		JSONArray json = JSONArray.fromObject(list, jsonConfg);*/
-		JsonConfig jsonConfg = new JsonConfig();
-		jsonConfg.registerJsonValueProcessor(Role.class, new ObjectJsonValueProcessor(new String[]{"menuList"}, Role.class));
-		JSONObject json = JSONObject.fromObject(map, jsonConfg);
+		JsonConfig jsonConfig = new JsonConfig();
+		//jsonConfg.registerJsonValueProcessor(Role.class, new ObjectJsonValueProcessor(new String[]{"menuList"}, Role.class));
+		jsonConfig.setCycleDetectionStrategy(CycleDetectionStrategy.LENIENT);
+		JSONObject json = JSONObject.fromObject(map, jsonConfig);
 		this.print(json.toString());
 	}
 	/**

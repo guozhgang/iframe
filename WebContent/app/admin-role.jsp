@@ -9,10 +9,13 @@
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="removeRole()">删除</a>
     </div>
     <div id="role_dlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px"
-            closed="true" buttons="#role_dlg_buttons">
+            closed="true" buttons="#role_dlg_buttons" data-options="onClose: function() {
+					$('#role_form').form('clear');
+				}">
         <div class="ftitle">角色信息</div>
         <form id="role_form" class="form" method="post" novalidate>
             <div class="fitem">
+            	<input type="hidden" name="id"/>
                 <label>角色名称:</label>
                 <input name="roleName" class="easyui-textbox" required="true">
                 <input name="menuIds" type="hidden"/>
@@ -36,15 +39,12 @@
 				singleSelect: true,
 				rownumbers: true,
 				pagination :true,
-				pageSize:20,
-				selectOnCheck : false,
-				checkOnSelect : true,
 				fit:true,
 				toolbar:'#role_toolbar',
 				columns : [[
 					{
-						checkbox:true,
-						width : 120
+						field:'id',
+						hidden:true
 					},{
 						title : '角色名称',
 						field : 'roleName',
@@ -69,12 +69,26 @@
             $('#role_dlg').dialog('open').dialog('setTitle','添加角色');
             url = "${path}/role!save.action";
         }
-        
+        function editRole() {
+        	var data = $("#build_role").datagrid("getSelected");
+        	if (data) {
+        		$('#role_dlg').dialog('open').dialog('setTitle','编辑角色');
+            	$("#role_form").form('load', data);
+                url = "${path}/role!save.action";
+        	} else {
+        		$.messager.show({
+        			title:'系统提示',
+        			msg:'请先选择一条信息'
+        		});
+        	}
+        	
+        }
        	function saveRole() {
        		$("#role_form").form('submit', {
        			url: url,
        			onSubmit: function() {
-       				return true;
+       				var isValid = $(this).form('validate');
+       				return isValid ? true : false;
        			},
        			success: function(data) {
        				data = eval("(" + data + ")");
@@ -82,6 +96,10 @@
 						title : '系统提示',
 						msg : data.message
 					});
+       				if (data.flag) {
+       					$('#role_dlg').dialog('close');
+           				$("#build_role").datagrid("reload");
+       				}
        			}
        		});
        	}

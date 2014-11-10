@@ -30,7 +30,6 @@ public class RoleAction extends ActionUtil<Role>{
 		}
 	}
 	public void list() {
-		
 		this.sendJSON(roleService.list(start, rows), roleService.count());
 	}
 }
