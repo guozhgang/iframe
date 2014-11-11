@@ -13,6 +13,6 @@ public class MenuDao extends BaseDao<Menu>{
 		return findListByHQL(hql);
 	}
 	public int findCount(String id) {
-		return getCountBySql("select count(*) from ss_menu t where t.parent = ?", id);
+		return getCountByHql("select count(i) from Menu i where i.parent = "+id);
 	}
 }

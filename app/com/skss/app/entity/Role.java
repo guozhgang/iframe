@@ -35,6 +35,7 @@ public class Role extends IdEntity {
 	@ManyToMany
 	@JoinTable(name = "SS_ROLE_MENU", joinColumns = { @JoinColumn(name = "role_id") }, inverseJoinColumns = { @JoinColumn(name = "menu_id") })
 	@Fetch(FetchMode.SUBSELECT)
+	@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 	public List<Menu> getMenuList() {
 		return menuList;
 	}

@@ -34,7 +34,7 @@ public class RoleAction extends ActionUtil<Role>{
 		this.sendJSON(roleService.list(model, start, rows), roleService.count());
 	}
 	public void findRoleById() {
-		Role role = this.roleService.findRoleById("402881f54988f750014988f7ca550002");
+		Role role = this.roleService.findRoleById("402881e9499ea53601499eb3c06c0001");
 		System.out.println("role:"+role.getRoleName());
 	}
 	public void remove() {

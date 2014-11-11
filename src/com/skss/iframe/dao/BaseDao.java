@@ -6,21 +6,27 @@ import java.util.List;
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
 
+import com.skss.iframe.constant.cache.QueryCache;
 import com.skss.iframe.util.SessionUtil;
 
-
+/**
+ * BaseDao
+ * @author guozhgang
+ *
+ * @param <T>
+ */
 @SuppressWarnings("unchecked")
 public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
  
 	public List<T> findListBySQL(String sql,Object... objs){
 		SQLQuery query = getCurrentSession().createSQLQuery(formatSQL(sql));
 		fillParam(query,objs);
-		query.setCacheable(true);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.addEntity(getEntity()).list();
 	}
 	public List<T> executeBySQL(String sql){
 		SQLQuery query = getCurrentSession().createSQLQuery(sql);
-		query.setCacheable(true);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.addEntity(getEntity()).list();
 	}
 	public List<T> findPaginationListBySQL(String sql, int start, int limit, Object... objs) {
@@ -28,7 +34,7 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		query.setFirstResult(start);
 		query.setMaxResults(limit);
 		fillParam(query, objs);
-		query.setCacheable(true);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.addEntity(getEntity()).list();
 	}
 	private Class<?> getEntity(){
@@ -60,8 +66,9 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 	public int getCountBySql(String sql, Object... objs) {
 		SQLQuery query=getCurrentSession().createSQLQuery(formatSQL(sql));
 		fillParam(query, objs);
-		query.setCacheable(true);
-		return Integer.parseInt(query.uniqueResult()+"");
+		//query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
+		//query.addEntity(getEntity());
+		return Integer.parseInt(query.uniqueResult().toString());
 	}
 	public T load(String id) {
 		T t = (T)getCurrentSession().load(getEntity(), id);
@@ -88,7 +95,7 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
 		fillParam(query, objs);
-		query.setCacheable(true);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.list();
 	}
 	@Override
@@ -99,21 +106,21 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		query.setFirstResult(start);
 		query.setMaxResults(limit);
 		fillParam(query, objs);
-		query.setCacheable(true);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.list();
 	}
 	@Override
 	public List<T> executeByHQL(String hql) {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
-		query.setCacheable(true);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.list();
 	}
 	@Override
 	public int getCountByHql(String hql, Object... objs) {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
-		query.setCacheable(true);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return Integer.parseInt(query.uniqueResult().toString());
 	}
 	

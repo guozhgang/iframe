@@ -19,6 +19,7 @@ import com.skss.iframe.entity.IdEntity;
 
 @Entity
 @Table(name = "ss_menu")
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Menu extends IdEntity{
 	private String nodeId;
 	private String text;
