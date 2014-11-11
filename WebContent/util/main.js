@@ -7,6 +7,7 @@ $(function() {
 			if (isLeaf) buildTab(node); 
 		}
 	});
+	
 });
 /**
  * 创建tab页
@@ -23,5 +24,16 @@ function buildTab(node) {
 			closable:true
 		});
 	}
-	
+}
+/**
+ * 设置分页风格
+ * @param id datagrid id
+ */
+function setPagination(id) {
+	$($("#" + id).datagrid("getPager")).pagination({
+		pageList: [5,10,15,20],
+		pageSize:15,
+		layout:['list','sep','first','prev','links','next','last','sep','refresh'],
+		displayMsg:'当前显示 {from} / {to} 条记录   共 {total} 条记录'
+	});
 }

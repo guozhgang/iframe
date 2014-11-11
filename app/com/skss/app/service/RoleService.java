@@ -22,9 +22,7 @@ public class RoleService {
 	private MenuDao menuDao;
 
 	public void save(Role role, String menuIds) {
-		System.out.println("++"+role.getId());
-		if (null == role.getId()) {
-			System.out.println("-----");
+		if (null == role.getId() || "".equals(role.getId())) {
 			role.setId(null);
 		}
 		String menus[] = menuIds.split(",");
@@ -59,8 +57,30 @@ public class RoleService {
 	 * @param limit
 	 * @return
 	 */
-	public List<Role> list(int start, int limit) {
-		return roleDao.findPaginationListByHQL("from Role", start, limit);
+	public List<Role> list(Role role, int start, int limit) {
+		StringBuilder hql = new StringBuilder("from Role i where 1 = 1 ");
+		if (!"".equals(role.getKey()) && null != role.getKey()) {
+			hql.append("and roleName like '%"+role.getKey()+"%'");
+		}
+		return roleDao.findPaginationListByHQL(hql.toString(), start, limit);
+	}
+	public Role findRoleById(String id) {
+		return roleDao.executeByHQL("from Role").get(0);
+	}
+	public static void main(String[] args) {
+		ClassPathXmlApplicationContext cxp = new ClassPathXmlApplicationContext("applicationContext.xml");
+		//RoleService roleService = (RoleService)cxp.getBean("roleService");
+		//System.out.println(roleService.list(new Role(), 0, 10).size());
+		RoleDao roleDao = (RoleDao)cxp.getBean("roleDao");
+		List<Role> role = roleDao.findListByHQL("from Role");
+		System.out.println(role.size());
+		try {
+			Thread.sleep(2000);
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+		List<Role> role2 = roleDao.findListByHQL("from Role");
+		System.out.println(role2.size());
 	}
 	/**
 	 * 统计总数

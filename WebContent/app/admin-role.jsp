@@ -7,7 +7,10 @@
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newRole()">添加</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editRole()">编辑</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="removeRole()">删除</a>
+        <div style="float:right;"><input class="easyui-searchbox" id="role_search" data-options="prompt:'请输入您要查询的关键字'" name="role_search" style="width:200px;"/>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-clear" plain="true" id="role_reset">重置</a></div>
     </div>
+    
     <div id="role_dlg" class="easyui-dialog" style="width:400px;height:280px;padding:10px 20px"
             closed="true" buttons="#role_dlg_buttons" data-options="onClose: function() {
 					$('#role_form').form('clear');
@@ -39,10 +42,14 @@
 				singleSelect: true,
 				rownumbers: true,
 				pagination :true,
+				striped:true,
 				fit:true,
 				toolbar:'#role_toolbar',
 				columns : [[
 					{
+						checkbox:true,
+						field:'checkbox'
+					},{
 						field:'id',
 						hidden:true
 					},{
@@ -52,7 +59,23 @@
 						width : 120
 					}
 				]]
-			});	
+			});
+			//查询
+			$("#role_search").searchbox({
+				searcher: function(value, name) {
+					$("#build_role").datagrid('load',{
+						key: value
+					});
+				}
+			});
+			//重置
+			$("#role_reset").click(function(){
+				$("#role_search").searchbox("clear");
+				$("#build_role").datagrid('load', {
+					key:''
+				});
+			});
+			setPagination("build_role");
 			//创建菜单下拉列表
 			$("#role_menu").combotree({
 				valueField: 'id',
@@ -77,7 +100,9 @@
         		for (var i = 0; i < data.menuList.length; i++) {
         			val += data.menuList[i].id + ",";
         		}
+        		val = val.substr(0, val.length - 1);
         		$("#role_menu").combotree("setValues", val);
+        		$("input[name=menuIds]").val(val);
             	$("#role_form").form('load', data);
                 url = "${path}/role!save.action";
         	} else {
@@ -120,8 +145,7 @@
        		$("#role_form").form('submit', {
        			url: url,
        			onSubmit: function() {
-       				var isValid = $(this).form('validate');
-       				return isValid ? true : false;
+       				return $(this).form('validate');
        			},
        			success: function(data) {
        				data = eval("(" + data + ")");

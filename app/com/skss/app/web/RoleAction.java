@@ -21,6 +21,7 @@ public class RoleAction extends ActionUtil<Role>{
 		if (role == null) {
 			try {
 				roleService.save(model, menuIds);
+				this.sendSuccess();
 			} catch (Exception e) {
 				// TODO: handle exception
 				this.sendMessage(false, "参数错误");
@@ -29,11 +30,21 @@ public class RoleAction extends ActionUtil<Role>{
 			this.sendMessage(false, "角色名称已经存在!");
 		}
 	}
-	public void list() {
-		this.sendJSON(roleService.list(start, rows), roleService.count());
+	public void list() {		
+		this.sendJSON(roleService.list(model, start, rows), roleService.count());
+	}
+	public void findRoleById() {
+		Role role = this.roleService.findRoleById("402881f54988f750014988f7ca550002");
+		System.out.println("role:"+role.getRoleName());
 	}
 	public void remove() {
-		this.roleService.remove(model);
-		this.sendSuccess();
+		try {
+			this.roleService.remove(model);
+			this.sendSuccess();
+		} catch (Exception e) {
+			// TODO: handle exception
+			this.sendFailure();
+		}
+		
 	}
 }

@@ -15,16 +15,20 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 	public List<T> findListBySQL(String sql,Object... objs){
 		SQLQuery query = getCurrentSession().createSQLQuery(formatSQL(sql));
 		fillParam(query,objs);
+		query.setCacheable(true);
 		return query.addEntity(getEntity()).list();
 	}
 	public List<T> executeBySQL(String sql){
-		return getCurrentSession().createSQLQuery(sql).addEntity(getEntity()).list();
+		SQLQuery query = getCurrentSession().createSQLQuery(sql);
+		query.setCacheable(true);
+		return query.addEntity(getEntity()).list();
 	}
 	public List<T> findPaginationListBySQL(String sql, int start, int limit, Object... objs) {
 		SQLQuery query = getCurrentSession().createSQLQuery(formatSQL(sql));
 		query.setFirstResult(start);
 		query.setMaxResults(limit);
 		fillParam(query, objs);
+		query.setCacheable(true);
 		return query.addEntity(getEntity()).list();
 	}
 	private Class<?> getEntity(){
@@ -55,7 +59,8 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 	}
 	public int getCountBySql(String sql, Object... objs) {
 		SQLQuery query=getCurrentSession().createSQLQuery(formatSQL(sql));
-		fillParam(query, objs);		
+		fillParam(query, objs);
+		query.setCacheable(true);
 		return Integer.parseInt(query.uniqueResult()+"");
 	}
 	public T load(String id) {
@@ -83,6 +88,7 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
 		fillParam(query, objs);
+		query.setCacheable(true);
 		return query.list();
 	}
 	@Override
@@ -90,19 +96,24 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 			Object... objs) {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
+		query.setFirstResult(start);
+		query.setMaxResults(limit);
 		fillParam(query, objs);
+		query.setCacheable(true);
 		return query.list();
 	}
 	@Override
 	public List<T> executeByHQL(String hql) {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
+		query.setCacheable(true);
 		return query.list();
 	}
 	@Override
 	public int getCountByHql(String hql, Object... objs) {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
+		query.setCacheable(true);
 		return Integer.parseInt(query.uniqueResult().toString());
 	}
 	

@@ -1,22 +1,22 @@
 package com.skss.app.entity;
 
+
 import java.util.ArrayList;
 import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
-import org.hibernate.annotations.Cascade;
-import org.hibernate.annotations.CascadeType;
 import org.hibernate.annotations.Fetch;
 import org.hibernate.annotations.FetchMode;
 
 import com.skss.iframe.entity.IdEntity;
+
+
 @Entity
 @Table(name = "ss_menu")
 public class Menu extends IdEntity{
@@ -54,9 +54,8 @@ public class Menu extends IdEntity{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-/*	@ManyToMany(mappedBy="menuList")
+	/*@ManyToMany(mappedBy="menuList")
 	@Fetch(FetchMode.SUBSELECT)
-	@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 	public List<Role> getRoleList() {
 		return roleList;
 	}
