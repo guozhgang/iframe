@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.hibernate.Query;
 import org.hibernate.SQLQuery;
+import org.springframework.stereotype.Repository;
 
 import com.skss.iframe.constant.cache.QueryCache;
 import com.skss.iframe.util.SessionUtil;
@@ -16,6 +17,7 @@ import com.skss.iframe.util.SessionUtil;
  * @param <T>
  */
 @SuppressWarnings("unchecked")
+@Repository
 public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
  
 	public List<T> findListBySQL(String sql,Object... objs){
