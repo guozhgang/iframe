@@ -12,6 +12,7 @@ import java.util.Map;
  */
 @SuppressWarnings("rawtypes")
 public class TreeNode {
+	public TreeNode() {}
 	private String id;
 	private String text;
 	private String state;

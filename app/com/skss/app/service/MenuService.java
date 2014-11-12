@@ -8,6 +8,7 @@ import org.springframework.stereotype.Service;
 
 import com.skss.app.dao.MenuDao;
 import com.skss.app.entity.Menu;
+import com.skss.iframe.service.AbstractService;
 
 @Service("menuService")
 public class MenuService {

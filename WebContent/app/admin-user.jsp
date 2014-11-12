@@ -30,6 +30,10 @@
             	<label>登录密码:</label>
                 <input name="password" class="easyui-textbox" required="true">
             </div>
+            <div class="fitem">
+            	<label>确认密码:</label>
+                <input name="loginName" class="easyui-textbox"  required="true">
+            </div>
             
             
             
