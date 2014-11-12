@@ -4,6 +4,7 @@ import javax.annotation.Resource;
 
 import org.hibernate.Session;
 import org.hibernate.SessionFactory;
+import org.springframework.orm.hibernate3.HibernateTemplate;
 
 public class SessionUtil {
 	@Resource(name = "sessionFactory")

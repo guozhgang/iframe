@@ -4,6 +4,7 @@ import javax.annotation.Resource;
 
 import com.skss.app.entity.Role;
 import com.skss.app.service.RoleService;
+import com.skss.iframe.util.ApplicationContextUtils;
 import com.skss.iframe.web.ActionUtil;
 
 public class RoleAction extends ActionUtil<Role>{
@@ -32,10 +33,6 @@ public class RoleAction extends ActionUtil<Role>{
 	}
 	public void list() {		
 		this.sendJSON(roleService.list(model, start, rows), roleService.count());
-	}
-	public void findRoleById() {
-		Role role = this.roleService.findRoleById("402881e9499ea53601499eb3c06c0001");
-		System.out.println("role:"+role.getRoleName());
 	}
 	public void remove() {
 		try {

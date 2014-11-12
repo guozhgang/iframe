@@ -67,27 +67,13 @@ public class RoleService {
 	public Role findRoleById(String id) {
 		return roleDao.executeByHQL("from Role").get(0);
 	}
-	public static void main(String[] args) {
-		ClassPathXmlApplicationContext cxp = new ClassPathXmlApplicationContext("applicationContext.xml");
-		//RoleService roleService = (RoleService)cxp.getBean("roleService");
-		//System.out.println(roleService.list(new Role(), 0, 10).size());
-		RoleDao roleDao = (RoleDao)cxp.getBean("roleDao");
-		List<Role> role = roleDao.findListByHQL("from Role");
-		System.out.println(role.size());
-		try {
-			Thread.sleep(2000);
-		} catch (Exception e) {
-			// TODO: handle exception
-		}
-		List<Role> role2 = roleDao.findListByHQL("from Role");
-		System.out.println(role2.size());
-	}
 	/**
 	 * 统计总数
 	 * @return
 	 */
 	public int count() {
 		return roleDao.getCountByHql("select count(i) from Role i");
+		//return roleDao.getCountBySql("select count(*) from SS_ROLE");
 	}
 	public void remove(Role role) {
 		roleDao.delete(role);

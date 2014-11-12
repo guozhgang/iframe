@@ -46,6 +46,7 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		for(int i=0;i<num;i++){
 			sql=sql.replaceFirst("[?]", ":param"+i);
 		}
+		
 		return sql;
 	}
 	private static int getSubstrByIndex(String sql,String str,int fromIndex){
@@ -66,7 +67,7 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 	public int getCountBySql(String sql, Object... objs) {
 		SQLQuery query=getCurrentSession().createSQLQuery(formatSQL(sql));
 		fillParam(query, objs);
-		//query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
+		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		//query.addEntity(getEntity());
 		return Integer.parseInt(query.uniqueResult().toString());
 	}

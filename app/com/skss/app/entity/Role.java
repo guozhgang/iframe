@@ -19,7 +19,7 @@ import com.skss.iframe.entity.IdEntity;
 
 @Entity
 @Table(name = "SS_ROLE")
-@Cache(usage=CacheConcurrencyStrategy.READ_WRITE)
+@Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class Role extends IdEntity {
 	private String roleName;
 	private List<Menu> menuList;
