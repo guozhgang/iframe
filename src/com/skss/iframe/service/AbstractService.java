@@ -10,6 +10,7 @@ public class AbstractService <T>{
 	@Resource
 	private BaseDao<T> baseDao;
 	public void save(T t) {
+
 		this.baseDao.save(t);
 	}
 }

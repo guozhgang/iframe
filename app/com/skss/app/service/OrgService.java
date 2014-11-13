@@ -39,3 +39,4 @@ public class OrgService {
 		return this.orgDao.getCountByHql(hql.toString());
 	}
 }
+
