@@ -34,6 +34,14 @@
             	<label>确认密码:</label>
                 <input name="loginName" class="easyui-textbox"  required="true">
             </div>
+            <div class="fitem">
+            	<label>所属机构:</label>
+                <input name="org" class="easyui-combotree" data-options="url:'org!list.action'"  required="true">
+            </div>
+            <div class="fitem">
+            	<label>所属角色:</label>
+                <input name="role" class="easyui-combotree" data-options="url:'role!list.action'"  required="true">
+            </div>
             
             
             

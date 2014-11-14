@@ -48,14 +48,16 @@
 				columns : [[
 					{
 						field:'id',
-						hidden:false
+						hidden:true
 					},{
-						title : '机构名称',
+						title : '组织机构名称',
 						field : 'text',
 						width:200
 					},{
+						title:'组织机构代码',
 						field:'code',
-						hidden:true
+						hidden:false,
+						width:200
 					}
 				]] 
 			});
@@ -83,8 +85,9 @@
 			setPagination("build_org");
 			
 		});
-        var url;
+        var url,flag;
         function newOrg(){
+        	flag = "add";
         	var row = $("#build_org").treegrid("getSelected");
         	if (row) {
         		$("#parent").combotree("setText", row.text);
@@ -95,11 +98,16 @@
         }
         function editOrg() {
         	var data = $("#build_org").treegrid("getSelected");
+        	var parent = $("#build_org").treegrid("getParent", data.id);
         	if (data) {
+        		flag = "edit";
         		$('#org_dlg').dialog('open').dialog('setTitle','编辑机构');
             	$("#org_form").form('load', data);
-            	$("#parent").combotree("setText", data.text);
-        		$("input[name=parent]").val(data.id);
+            	if (!parent) {
+            	} else {
+            		$("#parent").combotree("setText", parent.text);
+            		$("input[name=parent]").val(parent.id);
+            	}
                 url = "${path}/org!save.action";
         	} else {
         		$.messager.show({
@@ -139,6 +147,7 @@
         }
        	function saveOrg() {
        		var id = $("input[name=parent]").val();
+       		
        		$("#org_form").form('submit', {
        			url: url,
        			onSubmit: function() {
@@ -152,17 +161,44 @@
 					});
        				if (data.flag) {
        					$('#org_dlg').dialog('close');
+       					var checkedOrg = $("#build_org").treegrid("getSelected");
        					if (id) { 
-       						if ($("#build_org").treegrid("isLeaf", id)) { //如果是叶子节点，刷新父节点
-           						var orgparent = $("#build_org").treegrid("getParent", id);
-           						$("#build_org").treegrid("reload", orgparent.id);
-           					} else {
-           						$("#build_org").treegrid("reload", id);
-           					}
+       						var toParent = $("#build_org").treegrid("getParent", id);
+       						if (flag == "edit") {  //修改刷新
+       							var checkedParent = $("#build_org").treegrid("getParent", checkedOrg.id);
+       							if (checkedParent == toParent) {  //判断要修改的目标节点是否一致
+       								if ($("#build_org").treegrid("isLeaf", id)) {   //刷新目标节点
+               							$("#build_org").treegrid("reload", toParent.id);
+               						} else {
+               							$("#build_org").treegrid("reload", checkedParent.id);
+               						}
+       							} else { 
+       								alert(1);
+       								 if ($("#build_org").treegrid("isLeaf", checkedOrg.id)) {  //选中节点为叶子节点，刷新父节点
+               							$("#build_org").treegrid("reload", checkedParent.id);
+               						} else {
+               							$("#build_org").treegrid("reload", checkedOrg.id);
+               						} 
+               						if ($("#build_org").treegrid("isLeaf", id)) {   //刷新目标节点
+               							$("#build_org").treegrid("reload", toParent.id);
+               						} else {
+               							$("#build_org").treegrid("reload", id);
+               						}
+       							}
+       						} else if (flag == "add") {  //添加刷新
+       							if ($("#build_org").treegrid("isLeaf", id)) {   //刷新目标节点
+           							if (!toParent) {
+           								$("#build_org").treegrid("reload");
+           							} else {
+           								$("#build_org").treegrid("reload", toParent.id);
+           							}
+           						} else {
+           							$("#build_org").treegrid("reload", id);
+           						}
+       						}
        					} else { 
        						$("#build_org").treegrid("reload");
        					}
-
        				}
        			}
        		});

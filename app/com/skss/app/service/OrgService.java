@@ -16,7 +16,7 @@ public class OrgService {
 	private OrgDao orgDao;
 	
 	public void save(Organization org) {
-		if (org.getId() == null) {
+		if (null == org.getId() || "".equals(org.getId())) {
 			org.setId(null);
 		}
 		this.orgDao.saveOrUpdate(org);

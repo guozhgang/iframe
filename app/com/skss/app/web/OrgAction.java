@@ -1,13 +1,11 @@
 package com.skss.app.web;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Resource;
 
 import com.skss.app.dao.OrgTree;
-import com.skss.app.entity.Menu;
 import com.skss.app.entity.Organization;
 import com.skss.app.service.OrgService;
 import com.skss.iframe.entity.TreeNode;
@@ -34,7 +32,7 @@ public class OrgAction extends ActionUtil<Organization>{
 	public void list() {
 		//sendJSON(this.orgService.list(model, start, rows), this.orgService.count());
 		String id = request.getParameter("id");
-		List<Organization> list = this.orgService.list(id);
+	/*	List<Organization> list = this.orgService.list(id);
 		List<TreeNode> treelist = new ArrayList<TreeNode>();
 		if (list.size() != 0) {
 			OrgTree node = null;
@@ -50,21 +48,21 @@ public class OrgAction extends ActionUtil<Organization>{
 				treelist.add(node);
 			}
 		}
-		sendTree(treelist);
-		//sendTree(appendChildren(id));
+		sendTree(treelist);*/
+		sendTree(appendChildren(id));
 	}
 	public List<TreeNode> appendChildren(String id) {
 		List<Organization> list = this.orgService.list(id);
 		List<TreeNode> treelist = new ArrayList<TreeNode>();
 		if (list.size() != 0) {
-			TreeNode node = null;
+			OrgTree node = null;
 			Organization org = null;
 			for (int i = 0; i < list.size(); i++) {
 				org = list.get(i);
 				node = new OrgTree();
 				node.setId(org.getId());
 				node.setText(org.getText());
-				node.setAttributes(attributes);
+				node.setCode(org.getCode());
 				if (orgService.count(org.getId()) == 0) {
 					node.setState("open");
 				} else {
