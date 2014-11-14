@@ -1,14 +1,4 @@
-$(function() {
-	$("#menu_tree").tree({
-		url:'${path}/menu!findAllMenu.action',
-		onlyLeafCheck: true,
-		onClick: function(node) {
-			var isLeaf = $("#menu_tree").tree("isLeaf", node.target);
-			if (isLeaf) buildTab(node); 
-		}
-	});
-	
-});
+
 /**
  * 创建tab页
  * @param node

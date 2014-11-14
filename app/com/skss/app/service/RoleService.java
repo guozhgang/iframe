@@ -1,6 +1,7 @@
 package com.skss.app.service;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 import javax.annotation.Resource;
@@ -12,6 +13,7 @@ import com.skss.app.dao.MenuDao;
 import com.skss.app.dao.RoleDao;
 import com.skss.app.entity.Menu;
 import com.skss.app.entity.Role;
+import com.skss.iframe.entity.TreeNode;
 import com.skss.iframe.util.ApplicationContextUtils;
 
 @Service("roleService")
@@ -77,5 +79,23 @@ public class RoleService {
 	}
 	public void remove(Role role) {
 		roleDao.delete(role);
+	}
+	
+	public List<TreeNode> roleTree() {
+		List<Role> list = this.roleDao.findListByHQL("from Role");
+		List<TreeNode> treelist = new ArrayList<TreeNode>();
+		if (list.size() != 0) {
+			TreeNode node = null;
+			Role role = null;
+			for (int i = 0; i < list.size(); i++) {
+				role = list.get(i);
+				node = new TreeNode();
+				node.setId(role.getId());
+				node.setText(role.getRoleName());
+				node.setState("open");
+				treelist.add(node);
+			}
+		}
+		return treelist;
 	}
 }

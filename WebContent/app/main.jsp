@@ -35,15 +35,36 @@
         <div data-options="region:'south',split:true" style="height:50px;"></div>
         <div data-options="region:'east',split:true" title="East" style="width:100px;"></div> -->
         <div data-options="region:'west',split:true" title="系统管理平台" style="width:200px;">
-        	<ul id="menu_tree"></ul>
+        	<ul id="menu_tree" class="easyui-tree" data-options="url:'${path}/menu!findAllMenu.action',
+				onlyLeafCheck: true,
+				
+				animate:true,
+				onClick: function(node) {
+						var isLeaf = $('#menu_tree').tree('isLeaf', node.target);
+						if (isLeaf) buildTab(node); 
+					}
+		"></ul>
         </div>
         <div data-options="region:'center'">
-        	<div id="menuTab" class="easyui-tabs" data-options="fit:true">
+        	 <div id="menuTab" class="easyui-tabs" data-options="fit:true">
 				<div title="首页" style="padding: 0px; overflow: hidden;" align="center">
 					
 				</div>
-			</div>
+			</div> 
+			<%-- <table>
+		    	<tr>
+		    	<%for (int i = 0; i < 10; i++) {
+		    		if (i%2==0) {
+		    		%>	
+		    		</tr><tr>
+		    		<%} %>
+		    		
+		    		<td>dddddd</td>
+		    	<%} %>
+		    	</tr>
+    		</table> --%>
         </div>
     </div>
+    
 </body>
 </html>

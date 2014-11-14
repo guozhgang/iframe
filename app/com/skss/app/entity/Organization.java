@@ -1,13 +1,15 @@
 package com.skss.app.entity;
 
+
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.JoinColumn;
+import javax.persistence.ManyToOne;
 import javax.persistence.Table;
 import javax.persistence.Transient;
-
 import org.hibernate.annotations.Cache;
 import org.hibernate.annotations.CacheConcurrencyStrategy;
-
 import com.skss.iframe.entity.IdEntity;
 
 @Entity
@@ -18,7 +20,6 @@ public class Organization extends IdEntity{
 	private String code;
 	private String parent;
 	private String key;
-	
 	@Column(name = "name")
 	public String getText() {
 		return text;
@@ -47,7 +48,4 @@ public class Organization extends IdEntity{
 	public void setParent(String parent) {
 		this.parent = parent;
 	}
-	
-	
-
 }

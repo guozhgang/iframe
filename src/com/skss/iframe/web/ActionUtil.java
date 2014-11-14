@@ -2,10 +2,7 @@ package com.skss.iframe.web;
 
 import java.io.IOException;
 import java.io.PrintWriter;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
 import java.lang.reflect.ParameterizedType;
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -18,20 +15,14 @@ import net.sf.json.JSONObject;
 import net.sf.json.JsonConfig;
 import net.sf.json.util.CycleDetectionStrategy;
 
-import org.apache.commons.beanutils.ConstructorUtils;
-import org.apache.commons.beanutils.ConvertUtils;
-import org.apache.commons.beanutils.Converter;
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
 import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
-import com.skss.app.entity.Menu;
-import com.skss.app.entity.Role;
 import com.skss.iframe.entity.TreeNode;
 import com.skss.iframe.util.Constant;
-import com.skss.iframe.util.json.ObjectJsonValueProcessor;
 @SuppressWarnings({ "rawtypes","unchecked" })
 /**
  * action父类，所有action必须继承此类
@@ -178,6 +169,4 @@ public class ActionUtil<M> extends ActionSupport implements ServletRequestAware,
 	public void setAttributes(Map<String, Object> attributes) {
 		this.attributes = attributes;
 	}
-	
-	
 }

@@ -44,4 +44,7 @@ public class RoleAction extends ActionUtil<Role>{
 		}
 		
 	}
+	public void roleTree() {
+		this.sendTree(roleService.roleTree());
+	}
 }

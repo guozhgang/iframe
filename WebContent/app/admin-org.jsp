@@ -2,7 +2,14 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <jsp:include page="../util/head.jsp"/>
 <body>
-    <div id="build_org"></div>
+   	<div class="easyui-layout" data-options="fit:true">
+   		<div data-options="region:'west',title:'组织机构',split:false " style="width:200px;">
+   			<div id="build_org_tree"></div>
+   		</div>
+   		<div data-options="region:'center'">
+   			 <div id="build_org"></div>
+   		</div>
+   	</div>
     <div id="org_toolbar">
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newOrg()">添加</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editOrg()">编辑</a>
@@ -36,55 +43,62 @@
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-cancel" onclick="javascript:$('#org_dlg').dialog('close')" style="width:90px">取消</a>
     </div>
     <script type="text/javascript">
+
 	    $(function() {
-			$('#build_org').treegrid({
-				url: 'org!list.action',
+		    $('#build_org').datagrid({
 				method: 'post',
-                idField: 'id',
-                treeField: 'text',
-                fit: true,
-                fitColumns: true,
+		        fit: true,
+		        animate: true,
+		        fitColumns: true,
+		        singleSelect:true,
+		        pagination: true,
 				toolbar:'#org_toolbar' ,
 				columns : [[
 					{
-						field:'id',
-						hidden:false
+						field:'checkbox',
+						checkbox:true
 					},{
-						title : '机构名称',
+						field:'id',
+						hidden:true
+					},{
+						title : '名称',
 						field : 'text',
 						width:200
 					},{
+						title:'代码',
 						field:'code',
-						hidden:true
+						hidden:false,
+						width:200
+					},{
+						title:'级别',
+						field:'level',
+						width:200
 					}
 				]] 
 			});
+			setPagination("build_org");
+			$("#build_org_tree").tree({
+				animate: true,
+	    		url:'${path}/org!list.action',
+	    		onClick:function(node) {
+	    			$("#build_org").datagrid("options").url = '${path}/org!findAllOrg.action';
+	    			$("#build_org").datagrid("load", {
+	    				id: node.id
+	    			});
+	   			}
+	    	});
 			$("#parent").combotree({
 		        url: 'org!list.action',
 		        onClick: function(node) {
 		        	$("input[name=parent]").val(node.id);
 		        }
 			});
-			//查询
-			$("#org_search").searchbox({
-				searcher: function(value, name) {
-					$("#build_org").treegrid('load',{
-						key: value
-					});
-				}
-			});
-			//重置
-			$("#org_reset").click(function(){
-				$("#org_search").searchbox("clear");
-				$("#build_org").treegrid('load', {
-					key:''
-				});
-			});
-			setPagination("build_org");
+			
 			
 		});
-        var url;
+        var url,flag;
         function newOrg(){
+        	flag = "add";
         	var row = $("#build_org").treegrid("getSelected");
         	if (row) {
         		$("#parent").combotree("setText", row.text);
@@ -96,10 +110,20 @@
         function editOrg() {
         	var data = $("#build_org").treegrid("getSelected");
         	if (data) {
+        		var parent = $("#build_org").treegrid("getParent", data.id);
+        		flag = "edit";
         		$('#org_dlg').dialog('open').dialog('setTitle','编辑机构');
             	$("#org_form").form('load', data);
-            	$("#parent").combotree("setText", data.text);
-        		$("input[name=parent]").val(data.id);
+            	if (!parent) {
+            		var orgtree = $("#build_org_tree").tree("getSelected");
+            		if(orgtree) {
+            			$("#parent").combotree("setText", orgtree.text);
+                		$("input[name=parent]").val(orgtree.id);
+            		};
+            	} else {
+            		$("#parent").combotree("setText", parent.text);
+            		$("input[name=parent]").val(parent.id);
+            	}
                 url = "${path}/org!save.action";
         	} else {
         		$.messager.show({
@@ -139,7 +163,7 @@
         }
        	function saveOrg() {
        		var id = $("input[name=parent]").val();
-       		$("#org_form").form('submit', {
+       		 $("#org_form").form('submit', {
        			url: url,
        			onSubmit: function() {
        				return $(this).form('validate');
@@ -151,21 +175,13 @@
 						msg : data.message
 					});
        				if (data.flag) {
-       					$('#org_dlg').dialog('close');
-       					if (id) { 
-       						if ($("#build_org").treegrid("isLeaf", id)) { //如果是叶子节点，刷新父节点
-           						var orgparent = $("#build_org").treegrid("getParent", id);
-           						$("#build_org").treegrid("reload", orgparent.id);
-           					} else {
-           						$("#build_org").treegrid("reload", id);
-           					}
-       					} else { 
-       						$("#build_org").treegrid("reload");
-       					}
-
+       					
+       						$("#build_org_tree").tree("reload");	
+       					
        				}
+       				$('#org_dlg').dialog('close');
        			}
-       		});
+       		}); 
        	}
     </script>
 
