@@ -6,6 +6,7 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
+import javax.persistence.FetchType;
 import javax.persistence.ManyToMany;
 import javax.persistence.Table;
 
@@ -25,7 +26,7 @@ public class Menu extends IdEntity{
 	private String text;
 	private String parent;
 	private String description;
-	/*private List<Role> roleList = new ArrayList<Role>();*/
+	private List<Role> roleList = new ArrayList<Role>();
 	
 	@Column(name = "node_id")
 	public String getNodeId() {
@@ -55,13 +56,13 @@ public class Menu extends IdEntity{
 	public void setDescription(String description) {
 		this.description = description;
 	}
-	/*@ManyToMany(mappedBy="menuList")
-	@Fetch(FetchMode.SUBSELECT)
+	@ManyToMany(mappedBy="menuList", fetch = FetchType.LAZY)
+//	@Fetch(FetchMode.SUBSELECT)
 	public List<Role> getRoleList() {
 		return roleList;
 	}
 	public void setRoleList(List<Role> roleList) {
 		this.roleList = roleList;
-	}*/
+	}
 	
 }

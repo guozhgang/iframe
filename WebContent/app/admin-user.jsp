@@ -42,9 +42,6 @@
             	<label>所属角色:</label>
                 <input name="roleId" class="easyui-combotree" data-options="url:'role!roleTree.action'"  required="true">
             </div>
-            
-            
-            
         </form>
     </div>
     <div id="user_dlg_buttons">

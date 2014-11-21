@@ -17,8 +17,9 @@
 	<target name="init">
 		<mkdir dir="${classes}"/>
 	</target>
+	
 	<!--编译java文件-->
-	<target name="compile" depends="init">
+	<target name="compile">
 		<javac srcdir="${src}" destdir="${classes}" includeantruntime="on">
 			<classpath refid="lib-classpath"/>
 		</javac>
@@ -37,6 +38,30 @@
 			<classes dir="${classes}"/>
 		</war>
 	</target>
+	<tstamp>  
+      <format property="TODAY_UK" pattern="d-MMMM-yyyy" locale="en"/>  
+    </tstamp>  
+    <tstamp>  
+     <format property="TODAY_CN" pattern="d-MMMM-yyyy" locale="zh"/>  
+    </tstamp>  
+    <tstamp>  
+       <format property="touch.time" pattern="MM-dd-yyyy hh:mm aa" offset="-5" unit="hour"/>  
+    </tstamp> 
+	<property name="jarfilename" value="${ant.project.name}-${DSTAMP}${TSTAMP}.jar" />  
+    <!--打包开始，名字为jar，依赖任务为compile-->  
+    <target name="jar" depends="compile" description="make jar file">  
+        <!--jar操作，jarfile指定jar包存放路径，basedir为编译后的class的目录-->  
+        <jar jarfile="${jarfilename}" basedir="${classes}">  
+            <!--为jar包指定manifest，当然，如果jar包不需要打成runnable的形式，manifest可以不要-->  
+            <manifest>  
+                <!--指定main-class-->  
+                <attribute name="Main-Class" value="demo.SayHello" />  
+                <!--指定Class-Path-->  
+                <attribute name="Class-Path" value="${lib}">  
+                </attribute>  
+            </manifest>  
+        </jar>  
+    </target>  
 	<!--创建初始化数据任务-->
 	<taskdef name="dbunit" classname="org.dbunit.ant.DbUnitTask" classpathref="lib-classpath"/>
 	<!--初始化数据-->

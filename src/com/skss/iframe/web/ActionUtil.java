@@ -23,14 +23,16 @@ import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
 import com.skss.iframe.entity.TreeNode;
 import com.skss.iframe.util.Constant;
+import com.skss.iframe.util.Log4jUtil;
 @SuppressWarnings({ "rawtypes","unchecked" })
 /**
  * action父类，所有action必须继承此类
  * @author guozhgang
  *
- * @param <M>
+ * @param <M>  pojo
+ * @param <T>  action,记录日志
  */
-public class ActionUtil<M> extends ActionSupport implements ServletRequestAware,ServletResponseAware,SessionAware,ModelDriven<M>{
+public class ActionUtil<M,T> extends Log4jUtil<T> implements ServletRequestAware,ServletResponseAware,SessionAware,ModelDriven<M>{
 	
 	/**
 	 * 
@@ -53,7 +55,6 @@ public class ActionUtil<M> extends ActionSupport implements ServletRequestAware,
 	public void setSession(Map session) {
 		// TODO Auto-generated method stub
 		this.session = session;
-		
 	}
 	public void setServletResponse(HttpServletResponse response) {
 		// TODO Auto-generated method stub

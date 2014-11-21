@@ -7,7 +7,7 @@ import com.skss.app.service.RoleService;
 import com.skss.iframe.util.ApplicationContextUtils;
 import com.skss.iframe.web.ActionUtil;
 
-public class RoleAction extends ActionUtil<Role>{
+public class RoleAction extends ActionUtil<Role, RoleAction>{
 
 	/**
 	 * 

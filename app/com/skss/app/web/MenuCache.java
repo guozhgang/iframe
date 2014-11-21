@@ -19,7 +19,7 @@ import com.skss.iframe.web.ActionUtil;
  * @author： guozhigang
  * @time：2014年11月10日,下午5:05:23
  */
-public class MenuCache extends ActionUtil<Menu> implements ServletContextListener{
+public class MenuCache extends ActionUtil<Menu, MenuCache> implements ServletContextListener{
 
 	/**
 	 * 

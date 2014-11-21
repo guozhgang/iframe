@@ -19,6 +19,9 @@ public class UserService {
 	@Resource
 	private RoleDao roleDao;
 	public void saveUser(User user, String roleId) {
+		if ("".equals(user.getId()) || null == user.getId()) {
+			user.setId(null);
+		}
 		Role role = roleDao.get(roleId);
 		List<Role> roles = new ArrayList<Role>();
 		roles.add(role);
@@ -26,8 +29,8 @@ public class UserService {
 		this.userDao.saveUser(user);
 	}
 	
-	public List<User> pagelist(int start, int limit) {
-		return this.userDao.pagelist(start, limit);
+	public List<User> pagelist(int start, int rows) {
+		return this.userDao.pagelist(start, rows);
 	}
 	
 	public User login(User user) {

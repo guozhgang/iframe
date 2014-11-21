@@ -31,10 +31,10 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.addEntity(getEntity()).list();
 	}
-	public List<T> findPaginationListBySQL(String sql, int start, int limit, Object... objs) {
+	public List<T> findPaginationListBySQL(String sql, int start, int rows, Object... objs) {
 		SQLQuery query = getCurrentSession().createSQLQuery(formatSQL(sql));
 		query.setFirstResult(start);
-		query.setMaxResults(limit);
+		query.setMaxResults(rows);
 		fillParam(query, objs);
 		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.addEntity(getEntity()).list();
@@ -102,12 +102,12 @@ public class BaseDao <T> extends SessionUtil implements SQLDao<T>,HQLDao<T> {
 		return query.list();
 	}
 	@Override
-	public List<T> findPaginationListByHQL(String hql, int start, int limit,
+	public List<T> findPaginationListByHQL(String hql, int start, int rows,
 			Object... objs) {
 		// TODO Auto-generated method stub
 		Query query = getCurrentSession().createQuery(formatSQL(hql));
 		query.setFirstResult(start);
-		query.setMaxResults(limit);
+		query.setMaxResults(rows);
 		fillParam(query, objs);
 		query.setCacheable(QueryCache.QUERY_CACHE_TRUE);
 		return query.list();

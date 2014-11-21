@@ -13,7 +13,7 @@ import com.skss.iframe.web.ActionUtil;
 
 /*@InterceptorRefs({@InterceptorRef("defaultStack"),@InterceptorRef("MyIntercept")})
 @ParentPackage(value="struts-interceptor")*/
-public class MenuAction extends ActionUtil<Menu>{
+public class MenuAction extends ActionUtil<Menu, MenuAction>{
 	/**
 	 * 
 	 */

@@ -11,8 +11,8 @@ public class UserDao extends BaseDao<User>{
 	public void saveUser(User user) {
 		this.saveOrUpdate(user);
 	}
-	public List<User> pagelist(int start, int limit) {
-		return findPaginationListByHQL("from User", start, limit);
+	public List<User> pagelist(int start, int rows) {
+		return findPaginationListByHQL("from User", start, rows);
 	}
 	
 	public User login(User user) {

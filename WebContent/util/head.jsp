@@ -1,3 +1,4 @@
+<%@page import="com.skss.app.entity.Role"%>
 <%@page import="com.skss.app.entity.Menu"%>
 <%@page import="java.util.List"%>
 <%@page import="com.skss.app.entity.User"%>
@@ -11,7 +12,7 @@
 <script src="${path }/jquery/easyui/easyui-lang-zh_CN.js"></script>
 <script src="${path }/util/main.js"></script>
 <%
-	User user = (User)session.getAttribute("user");
+	/* User user = (User)session.getAttribute("user");
 	System.out.print("user:"+user);
 	List<Menu> list = user.getRoles().get(0).getMenuList();
 	String menuIds = "";
@@ -19,5 +20,9 @@
 		menuIds += list.get(i).getId() + ",";
 	}
 	menuIds = menuIds.substring(0, menuIds.length() - 1);
-	System.out.println("menuIds:"+ menuIds);
+	System.out.println("menuIds:"+ menuIds); */
+	List<Role> roles = (List<Role>)session.getAttribute("role");
+	//System.out.println(roles.get(0).getMenuList());
+	
+	
 %>
