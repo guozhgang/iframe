@@ -57,6 +57,7 @@
 					{
 						field:'checkbox',
 						checkbox:true
+
 					},{
 						field:'id',
 						hidden:true
@@ -66,6 +67,7 @@
 						width:200
 					},{
 						title:'代码',
+
 						field:'code',
 						hidden:false,
 						width:200
@@ -73,6 +75,7 @@
 						title:'级别',
 						field:'level',
 						width:200
+
 					}
 				]] 
 			});
@@ -109,8 +112,10 @@
         }
         function editOrg() {
         	var data = $("#build_org").treegrid("getSelected");
+        	var parent = $("#build_org").treegrid("getParent", data.id);
         	if (data) {
         		var parent = $("#build_org").treegrid("getParent", data.id);
+
         		flag = "edit";
         		$('#org_dlg').dialog('open').dialog('setTitle','编辑机构');
             	$("#org_form").form('load', data);
@@ -163,7 +168,9 @@
         }
        	function saveOrg() {
        		var id = $("input[name=parent]").val();
-       		 $("#org_form").form('submit', {
+       		 
+       		
+       		$("#org_form").form('submit', {
        			url: url,
        			onSubmit: function() {
        				return $(this).form('validate');
@@ -178,6 +185,7 @@
        					
        						$("#build_org_tree").tree("reload");	
        					
+
        				}
        				$('#org_dlg').dialog('close');
        			}

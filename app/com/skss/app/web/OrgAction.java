@@ -32,6 +32,7 @@ public class OrgAction extends ActionUtil<Organization>{
 	public void list() {
 		//sendJSON(this.orgService.list(model, start, rows), this.orgService.count());
 		String id = request.getParameter("id");
+
 		/*List<Organization> list = this.orgService.list(id);
 		List<TreeNode> treelist = new ArrayList<TreeNode>();
 		if (list.size() != 0) {
@@ -49,11 +50,15 @@ public class OrgAction extends ActionUtil<Organization>{
 			}
 		}
 		sendTree(treelist);*/
+
 		sendTree(this.orgService.appendChildren(id));
+
 	}
+
 	
 	public void findAllOrg() {
 		sendJSON(this.orgService.list(start, rows, model.getId()), 50);
+
 	}
 	
 }
