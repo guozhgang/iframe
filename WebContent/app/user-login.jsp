@@ -62,7 +62,7 @@
         <div data-options="region:'west',split:true" title="系统管理平台" style="width:200px;">
         	<ul id="menu_tree" class="easyui-tree" data-options="url:'${path}/menu!findAllMenu.action',
 				onlyLeafCheck: true,
-				
+				cascadeCheck:false,
 				animate:true,
 				onClick: function(node) {
 						var isLeaf = $('#menu_tree').tree('isLeaf', node.target);

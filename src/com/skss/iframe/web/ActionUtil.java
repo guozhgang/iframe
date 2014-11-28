@@ -12,8 +12,10 @@ import javax.servlet.http.HttpServletResponse;
 
 import net.sf.json.JSONArray;
 import net.sf.json.JSONObject;
+import net.sf.json.JSONSerializer;
 import net.sf.json.JsonConfig;
 import net.sf.json.util.CycleDetectionStrategy;
+import net.sf.json.util.PropertyFilter;
 
 import org.apache.struts2.interceptor.ServletRequestAware;
 import org.apache.struts2.interceptor.ServletResponseAware;
@@ -21,6 +23,7 @@ import org.apache.struts2.interceptor.SessionAware;
 
 import com.opensymphony.xwork2.ActionSupport;
 import com.opensymphony.xwork2.ModelDriven;
+import com.skss.app.entity.User;
 import com.skss.iframe.entity.TreeNode;
 import com.skss.iframe.util.Constant;
 import com.skss.iframe.util.Log4jUtil;
@@ -105,9 +108,17 @@ public class ActionUtil<M,T> extends Log4jUtil<T> implements ServletRequestAware
 		map.put(Constant.ROWS, list);
 		map.put(Constant.TOTAL, total);
 		JsonConfig jsonConfig = new JsonConfig();
+		/*jsonConfig.setJsonPropertyFilter(new PropertyFilter() {
+			
+			@Override
+			public boolean apply(Object source, String name, Object value) {
+				// TODO Auto-generated method stub
+				return source instanceof User && name.equals("org");
+			}
+		});*/
 		//jsonConfg.registerJsonValueProcessor(Role.class, new ObjectJsonValueProcessor(new String[]{"menuList"}, Role.class));
 		jsonConfig.setCycleDetectionStrategy(CycleDetectionStrategy.LENIENT);
-		JSONObject json = JSONObject.fromObject(map, jsonConfig);
+		JSONObject json = JSONObject.fromObject(map);
 		this.print(json.toString());
 	}
 	/**

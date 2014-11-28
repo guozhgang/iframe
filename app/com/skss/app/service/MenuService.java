@@ -14,8 +14,8 @@ import com.skss.iframe.service.AbstractService;
 public class MenuService {
 	@Resource
 	private MenuDao menuDao;
-	public List<Menu> findMenuByAsync(String id) {
-		String hql = "from Menu t where ";
+	public List<Menu> findMenuByAsync(String id, String menuIds) {
+		String hql = "select t from Menu t where t.id in ("+menuIds+") and ";
 		if (id == null) {
 			hql += "t.parent = ''";
 		} else {

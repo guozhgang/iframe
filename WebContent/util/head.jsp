@@ -21,8 +21,8 @@
 	}
 	menuIds = menuIds.substring(0, menuIds.length() - 1);
 	System.out.println("menuIds:"+ menuIds); */
-	List<Role> roles = (List<Role>)session.getAttribute("role");
-	//System.out.println(roles.get(0).getMenuList());
+/* 	List<Role> roles = (List<Role>)session.getAttribute("role");
+	System.out.println(roles.get(0).getMenuList()); */
 	
 	
 %>

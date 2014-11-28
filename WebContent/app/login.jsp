@@ -41,8 +41,8 @@
         					msg:data.message
         				});
         				if (data.flag) {
-        					window.location.href = "main.jsp";
-        				}
+        					window.location.href = "user-login.jsp";
+        				} 
         			}
         		});
         	}

@@ -80,10 +80,16 @@
 			$("#role_menu").combotree({
 				valueField: 'id',
 		        textField: 'text',
+		        cascadeCheck:false,
 		        multiple: true,
 		        url: '${path}/menu!findAllMenu.action',
 		        onCheck: function(node, checked) {
-		        	$("input[name=menuIds]").val($("#role_menu").combotree("getValues"));
+		        	var tree = $("#role_menu").combotree("tree");
+		        	var nodes = $("#role_menu").combotree("getValues");
+		        	
+		        	
+		        	
+		        	$("input[name=menuIds]").val(nodes);
 		        }
 			});
 		});

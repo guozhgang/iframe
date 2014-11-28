@@ -4,13 +4,12 @@ import java.util.List;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
-
+import javax.persistence.FetchType;
 import javax.persistence.JoinColumn;
 import javax.persistence.JoinColumns;
 import javax.persistence.JoinTable;
 import javax.persistence.ManyToMany;
 import javax.persistence.ManyToOne;
-
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
 
@@ -28,7 +27,6 @@ public class User extends IdEntity{
 	private String userName;
 	private String loginName;
 	private String password;
-
 	private Organization org;
 	private List<Role> roles;
 
@@ -72,9 +70,5 @@ public class User extends IdEntity{
 	}
 	public void setRoles(List<Role> roles) {
 		this.roles = roles;
-
 	}
-	
-	
-	
 }
