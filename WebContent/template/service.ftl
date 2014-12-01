@@ -7,6 +7,8 @@ import org.springframework.stereotype.Service;
 
 import ${daoPackage}.${daoName};
 import ${entityPackage}.${entityName};
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class ${className} {
@@ -21,5 +23,12 @@ public class ${className} {
 	}
 	public void remove(${entityName} ${modelName}) {
 		${daoModelName}.remove(${modelName});
+	}
+	public List<${entityName}> list(${entityName} ${modelName}, int start, int limit) {
+		StringBuilder hql = new StringBuilder("from ${entityName} i where 1 = 1 ");
+		return ${daoModelName}.list(hql.toString(), start, limit);
+	}
+	public int count() {
+		return ${daoModelName}.count();
 	}
 }

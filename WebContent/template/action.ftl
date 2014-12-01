@@ -26,4 +26,7 @@ public class ${className} extends ActionUtil<${entityName}, ${className}>{
 	public void remove() {
 		${serviceModelName}.remove(model);
 	}
+	public void list() {		
+		this.sendJSON(${serviceModelName}.list(model, start, rows), ${serviceModelName}.count());
+	}
 }

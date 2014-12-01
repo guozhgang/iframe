@@ -1,11 +1,14 @@
 <?xml version="1.0"?>
 <dataset>
 	<SS_MENU ID="1" TEXT="系统管理" PARENT="" NODE_ID=""/>
-	<SS_MENU ID="2" TEXT="用户管理" PARENT="1" NODE_ID="admin-user"/>
-	<SS_MENU ID="3" TEXT="角色管理" PARENT="1" NODE_ID="admin-role"/>
-	<SS_MENU ID="4" TEXT="组织机构管理" PARENT="1" NODE_ID="admin-org"/>
+	<SS_MENU ID="2" TEXT="用户管理" PARENT="1" NODE_ID="admin-user.jsp"/>
+	<SS_MENU ID="3" TEXT="角色管理" PARENT="1" NODE_ID="admin-role.jsp"/>
+	<SS_MENU ID="33" TEXT="测试模板" PARENT="1" NODE_ID="template-test.jsp"/>
+	<SS_MENU ID="34" TEXT="html-test" PARENT="1" NODE_ID="test.jsp"/>
+	<SS_MENU ID="4" TEXT="组织机构管理" PARENT="1" NODE_ID="admin-org.jsp"/>
 	<SS_MENU ID="11" TEXT="模板" PARENT="" NODE_ID=""/>
-	<SS_MENU ID="12" TEXT="后台模板" PARENT="11" NODE_ID="template-java"/>
+	<SS_MENU ID="12" TEXT="后台模板" PARENT="11" NODE_ID="template-java.jsp"/>
+	<SS_MENU ID="13" TEXT="前台模板" PARENT="11" NODE_ID="template-html!readTemplate.action"/>
 	<SS_USER ID="1" LOGIN_NAME="admin" PASSWORD="admin"/>
 	<SS_ROLE ID="1" ROLE_NAME="管理员"/>
 	<SS_USER_ROLE USER_ID="1" ROLE_ID="1"/>
@@ -14,6 +17,8 @@
 	<SS_ROLE_MENU ROLE_ID="1" MENU_ID="3"/>
 	<SS_ROLE_MENU ROLE_ID="1" MENU_ID="11"/>
 	<SS_ROLE_MENU ROLE_ID="1" MENU_ID="12"/>
+	<SS_ROLE_MENU ROLE_ID="1" MENU_ID="13"/>
 	<SS_ROLE_MENU ROLE_ID="1" MENU_ID="4"/>
+	<SS_ROLE_MENU ROLE_ID="1" MENU_ID="34"/>
 	<SS_USER_ROLE USER_ID="1" ROLE_ID="1"/>
 </dataset>

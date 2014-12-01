@@ -27,6 +27,11 @@
             </div>
         </form>
         <script type="text/javascript">
+	        $(document).keydown(function(event) {
+	        	if (event.keyCode == 13 || event.keyCode == 15) {
+	        		login();
+	        	}
+	        });
         	function login() {
         		$("#login_form").form('submit',{
         			url:'user!login.action',

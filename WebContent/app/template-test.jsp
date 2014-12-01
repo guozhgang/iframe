@@ -76,14 +76,14 @@
         var url;
         function newTest(){
             $('#test_dlg').dialog('open').dialog('setTitle','添加测试');
-            url = "/iframe/test!save.action";
+            url = "${path}/test!save.action";
         }
         function editTest() {
         	var data = $("#build_test").datagrid("getSelected");
         	if (data) {
         		$('#test_dlg').dialog('open').dialog('setTitle','编辑测试');
             	$("#test_form").form('load', data);
-                url = "/iframe/test!save.action";
+                url = "${path}/test!save.action";
         	} else {
         		$.messager.show({
         			title:'系统提示',
@@ -98,7 +98,7 @@
         		$.messager.confirm("系统提示", "您确认要删除该条信息吗?", function(ok) {
         			if (ok) {
         				$.ajax({
-                			url: '/iframe/test!remove.action',
+                			url: '${path}/test!remove.action',
                 			data: {id: record.id},
                 			dataType: 'text',
                 			type: 'post',

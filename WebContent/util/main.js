@@ -4,7 +4,7 @@
  * @param node
  */
 function buildTab(node) {
-	var iframe = "<iframe src='"+node.attributes.nodeId+".jsp' frameborder='0' style='width:100%;height:100%'></iframe>";
+	var iframe = "<iframe src='"+node.attributes.nodeId+"' frameborder='0' style='width:100%;height:100%'></iframe>";
 	if ($("#menuTab").tabs("exists", node.text)) {
 		$("#menuTab").tabs("select",node.text);
 	} else {

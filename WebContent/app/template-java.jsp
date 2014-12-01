@@ -15,20 +15,20 @@
         <form id="org_form" class="form" method="post" novalidate>
         	<input type="hidden" name="name" id="table_name"/>
         	<div class="fitem">
-                <label>构建POJO:</label>
-                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\test\\com\\skss\\test\\entity\\">
+        		<label>构建POJO:</label>
+                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\app\\com\\skss\\app\\entity\\">
             </div>
             <div class="fitem">
                 <label>构建Dao:</label>
-                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\test\\com\\skss\\test\\dao\\">
+                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\app\\com\\skss\\app\\dao\\">
             </div>
             <div class="fitem">
                 <label>构建Service:</label>
-                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\test\\com\\skss\\test\\service\\">           
+                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\app\\com\\skss\\app\\service\\">           
             </div>
             <div class="fitem">
                 <label>构建Action:</label>
-                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\test\\com\\skss\\test\\action\\">           
+                <input name="path" class="easyui-textbox" required="true" value="F:\\workspace\\iframe\\app\\com\\skss\\app\\web\\">           
             </div>
         </form>
     </div>
@@ -49,7 +49,7 @@
 				fit:true,
 				toolbar:'#table_toolbar',
 				columns : [[
-					{
+					{  
 						checkbox:true,
 						field:'checkbox'
 					},{
@@ -57,6 +57,11 @@
 						field : 'name',
 						align : 'center',
 						width : 120
+					},{
+						title:'状态',
+						field:'state',
+						align:'center',
+						width:120
 					}
 				]]
     			
