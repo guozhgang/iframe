@@ -1,11 +1,11 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+       <%@ page language="java" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <jsp:include page="../util/head.jsp"/>
 <body>
     <div id="build_${entityModelName}"></div>
     <div id="${entityModelName}_toolbar">
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="new${entityName}()">添加</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="edit${entityName}()">编辑</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="new${entityName}()">${entityName}</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="edit${entityName}()">编辑ddddddd</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="remove${entityName}()">删除</a>
         <div style="float:right;"><input class="easyui-searchbox" id="${entityModelName}_search" data-options="prompt:'请输入您要查询的关键字'" name="${entityModelName}_search" style="width:200px;"/>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-clear" plain="true" id="${entityModelName}_reset">重置</a></div>
@@ -49,7 +49,7 @@
 						field:'id',
 						hidden:true
 					},{
-						title : '测试名称',
+						title : '测试名ddd称',
 						field : '${entityModelName}Name',
 						align : 'center',
 						width : 120
@@ -142,3 +142,10 @@
     </script>
 
 </body>
+ 
+ 
+ 
+ 
+ 
+ 
+ 

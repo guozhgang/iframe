@@ -4,7 +4,7 @@
 	<SS_MENU ID="2" TEXT="用户管理" PARENT="1" NODE_ID="admin-user.jsp"/>
 	<SS_MENU ID="3" TEXT="角色管理" PARENT="1" NODE_ID="admin-role.jsp"/>
 	<SS_MENU ID="33" TEXT="测试模板" PARENT="1" NODE_ID="template-test.jsp"/>
-	<SS_MENU ID="34" TEXT="html-test" PARENT="1" NODE_ID="test.jsp"/>
+	<SS_MENU ID="34" TEXT="555" PARENT="1" NODE_ID="555.jsp"/>
 	<SS_MENU ID="4" TEXT="组织机构管理" PARENT="1" NODE_ID="admin-org.jsp"/>
 	<SS_MENU ID="11" TEXT="模板" PARENT="" NODE_ID=""/>
 	<SS_MENU ID="12" TEXT="后台模板" PARENT="11" NODE_ID="template-java.jsp"/>

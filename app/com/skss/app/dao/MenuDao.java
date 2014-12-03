@@ -8,11 +8,17 @@ import com.skss.app.entity.Menu;
 import com.skss.iframe.dao.BaseDao;
 
 @Repository
-public class MenuDao extends BaseDao<Menu>{
+public class MenuDao extends BaseDao<Menu> {
 	public List<Menu> findMenuByAsync(String hql) {
 		return findListByHQL(hql);
 	}
+
 	public int findCount(String id) {
-		return getCountByHql("select count(i) from Menu i where i.parent = "+id);
+		return getCountByHql("select count(i) from Menu i where i.parent = "
+				+ id);
+	}
+
+	public void saveMenu(Menu menu) {
+		this.save(menu);
 	}
 }

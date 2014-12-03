@@ -9,10 +9,13 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+import org.springframework.stereotype.Repository;
+
 import com.skss.iframe.entity.Template;
 import com.skss.iframe.util.DBHelper;
 import com.skss.iframe.util.string.StringUtil;
 
+@Repository
 public class TemplateData {
 	/**
 	 * 获取列名
@@ -56,5 +59,27 @@ public class TemplateData {
 		pre.close();
 		conn.close();
 		return map;
+	}
+
+	/**
+	 * 获取所有数据库表
+	 * 
+	 * @throws Exception
+	 */
+	public List<Object> tables() throws Exception {
+		Connection conn = DBHelper.getConnection();
+		PreparedStatement pre = conn.prepareStatement("show TABLES");
+		ResultSet rs = pre.executeQuery();
+		List<Object> tables = new ArrayList<Object>();
+		String name = "";
+		while (rs.next()) {
+			Map<String, String> map = new HashMap<String, String>();
+			name = rs.getString(1);
+			map.put("name", name);
+			tables.add(map);
+		}
+		pre.close();
+		conn.close();
+		return tables;
 	}
 }

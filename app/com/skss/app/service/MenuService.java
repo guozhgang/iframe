@@ -8,14 +8,15 @@ import org.springframework.stereotype.Service;
 
 import com.skss.app.dao.MenuDao;
 import com.skss.app.entity.Menu;
-import com.skss.iframe.service.AbstractService;
 
 @Service("menuService")
 public class MenuService {
 	@Resource
 	private MenuDao menuDao;
+
 	public List<Menu> findMenuByAsync(String id, String menuIds) {
-		String hql = "select t from Menu t where t.id in ("+menuIds+") and ";
+		String hql = "select t from Menu t where t.id in (" + menuIds
+				+ ") and ";
 		if (id == null) {
 			hql += "t.parent = ''";
 		} else {
@@ -23,7 +24,12 @@ public class MenuService {
 		}
 		return menuDao.findMenuByAsync(hql);
 	}
+
 	public int findCount(String id) {
 		return menuDao.findCount(id);
+	}
+
+	public void saveMenu(Menu menu) {
+		menuDao.saveMenu(menu);
 	}
 }

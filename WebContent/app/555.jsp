@@ -1,11 +1,11 @@
-<%@ page language="java" pageEncoding="utf-8"%>
+     <%@ page language="java" pageEncoding="utf-8"%>
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <jsp:include page="../util/head.jsp"/>
 <body>
     <div id="build_test"></div>
     <div id="test_toolbar">
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newTest()">添加</a>
-        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editTest()">编辑</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-add" plain="true" onclick="newTest()">Test</a>
+        <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-edit" plain="true" onclick="editTest()">编辑ddddddd</a>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-remove" plain="true" onclick="removeTest()">删除</a>
         <div style="float:right;"><input class="easyui-searchbox" id="test_search" data-options="prompt:'请输入您要查询的关键字'" name="test_search" style="width:200px;"/>
         <a href="javascript:void(0)" class="easyui-linkbutton" iconCls="icon-clear" plain="true" id="test_reset">重置</a></div>
@@ -142,3 +142,7 @@
     </script>
 
 </body>
+ 
+ 
+ 
+ 

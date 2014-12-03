@@ -1,14 +1,10 @@
 package com.skss.iframe.web;
 
 import java.io.File;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.util.ArrayList;
 import java.util.Calendar;
-import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
+
+import javax.annotation.Resource;
 
 import org.apache.commons.io.FileUtils;
 import org.apache.struts2.ServletActionContext;
@@ -16,7 +12,6 @@ import org.apache.struts2.ServletActionContext;
 import com.skss.iframe.dao.TemplateData;
 import com.skss.iframe.entity.Template;
 import com.skss.iframe.template.util.FreemarkerUtil;
-import com.skss.iframe.util.DBHelper;
 import com.skss.iframe.util.string.StringUtil;
 
 public class TemplateAction extends ActionUtil<Template, TemplateAction> {
@@ -24,6 +19,8 @@ public class TemplateAction extends ActionUtil<Template, TemplateAction> {
 	 * 
 	 */
 	private static final long serialVersionUID = 1L;
+	@Resource
+	private TemplateData templateData;
 
 	public void deployment() throws Exception {
 		String names[] = request.getParameter("name").split(",");
@@ -109,26 +106,8 @@ public class TemplateAction extends ActionUtil<Template, TemplateAction> {
 		}
 	}
 
-	/**
-	 * 获取所有数据库表
-	 * 
-	 * @throws Exception
-	 */
 	public void tables() throws Exception {
-		Connection conn = DBHelper.getConnection();
-		PreparedStatement pre = conn.prepareStatement("show TABLES");
-		ResultSet rs = pre.executeQuery();
-		List<Object> tables = new ArrayList<Object>();
-		String name = "";
-		while (rs.next()) {
-			Map<String, String> map = new HashMap<String, String>();
-			name = rs.getString(1);
-			map.put("name", name);
-			tables.add(map);
-		}
-		pre.close();
-		conn.close();
-		this.sendJSON(tables, 20);
+		this.sendJSON(templateData.tables(), 20);
 	}
 
 	private static String getTime() {
