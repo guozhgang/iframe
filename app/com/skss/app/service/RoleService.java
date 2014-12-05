@@ -24,13 +24,16 @@ public class RoleService {
 		if (null == role.getId() || "".equals(role.getId())) {
 			role.setId(null);
 		}
-		String menus[] = menuIds.split(",");
-		if (menus.length > 0) {
-			List<Menu> menuList = new ArrayList<Menu>();
-			for (int i = 0; i < menus.length; i++) {
-				menuList.add(this.menuDao.get(menus[i]));
+
+		if (!menuIds.equals("")) {
+			String menus[] = menuIds.split(",");
+			if (menus.length > 0) {
+				List<Menu> menuList = new ArrayList<Menu>();
+				for (int i = 0; i < menus.length; i++) {
+					menuList.add(this.menuDao.get(menus[i]));
+				}
+				role.setMenuList(menuList);
 			}
-			role.setMenuList(menuList);
 		}
 
 		roleDao.saveRole(role);

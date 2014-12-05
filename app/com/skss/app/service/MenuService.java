@@ -20,7 +20,7 @@ public class MenuService {
 		if (id == null) {
 			hql += "t.parent = ''";
 		} else {
-			hql += "t.parent = " + id;
+			hql += "t.parent = '" + id + "'";
 		}
 		return menuDao.findMenuByAsync(hql);
 	}

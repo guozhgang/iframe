@@ -17,7 +17,10 @@ import org.apache.struts2.ServletActionContext;
 import org.apache.struts2.convention.annotation.ResultPath;
 
 import com.skss.app.entity.Menu;
+import com.skss.app.entity.Role;
+import com.skss.app.entity.User;
 import com.skss.app.service.MenuService;
+import com.skss.app.service.RoleService;
 import com.skss.iframe.dao.TemplateData;
 import com.skss.iframe.entity.Template;
 import com.skss.iframe.entity.TreeNode;
@@ -36,16 +39,18 @@ public class TemplateHtmlAction extends
 	private TemplateData templateData;
 	@Resource
 	private MenuService menuService;
+	@Resource
+	private RoleService roleService;
 
 	public void deployment() {
-		saveTemplate();
+		// saveTemplate();
 		String className = request.getParameter("tableName");
 		String htmlName = request.getParameter("htmlName");
 		String desc = request.getParameter("desc");
 		htmlName = StringUtil.format(htmlName);
 		try {
-			String filePath = "F:\\workspace\\iframe\\WebContent\\app\\"
-					+ htmlName + ".jsp";
+			String filePath = ServletActionContext.getServletContext()
+					.getRealPath("app") + "\\" + htmlName + ".jsp";
 			if (new File(filePath).exists()) {
 				this.sendMessage(false, "文件名已存在");
 			} else {
@@ -70,7 +75,12 @@ public class TemplateHtmlAction extends
 				menu.setParent("1");
 				menu.setNodeId(htmlName + ".jsp");
 				menuService.saveMenu(menu); // 保存菜单
-				// User user = session.this.sendMessage(true, "文件发布成功");
+				User user = (User) session.get("user");
+				Role role = user.getRoles().get(0);
+				List<Menu> menus = role.getMenuList();
+				menus.add(menu);
+				roleService.save(role, "");
+				this.sendMessage(true, "文件发布成功");
 
 			}
 		} catch (Exception e) {
@@ -82,7 +92,8 @@ public class TemplateHtmlAction extends
 
 	public String readTemplate() {
 		try {
-			String templatePath = "F:\\workspace\\iframe\\WebContent\\template\\html.ftl";
+			String templatePath = ServletActionContext.getServletContext()
+					.getRealPath("template") + "\\html.ftl";
 			FileInputStream fis = new FileInputStream(new File(templatePath));
 			char[] data = new char[fis.available()];
 			Reader reader = new InputStreamReader(fis, "utf-8");
@@ -99,7 +110,8 @@ public class TemplateHtmlAction extends
 
 	public void saveTemplate() {
 		String content = request.getParameter("content");
-		String templatePath = "F:\\workspace\\iframe\\WebContent\\template\\html.ftl";
+		String templatePath = ServletActionContext.getServletContext()
+				.getRealPath("template") + "\\html.ftl";
 		try {
 			if (content == "" || content == null) {
 				this.sendMessage(false, "发布失败,模板内容不能为空");

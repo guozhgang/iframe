@@ -1,9 +1,9 @@
-package com.skss.test.action;
+package com.skss.app.web;
 
 import javax.annotation.Resource;
 import com.skss.iframe.web.ActionUtil;
-import com.skss.test.entity.SsUser;
-import com.skss.test.service.SsUserService;
+import com.skss.app.entity.SsUser;
+import com.skss.app.service.SsUserService;
 
 public class SsUserAction extends ActionUtil<SsUser, SsUserAction>{
 
@@ -25,5 +25,8 @@ public class SsUserAction extends ActionUtil<SsUser, SsUserAction>{
 	}
 	public void remove() {
 		ssUserService.remove(model);
+	}
+	public void list() {		
+		this.sendJSON(ssUserService.list(model, start, rows), ssUserService.count());
 	}
 }

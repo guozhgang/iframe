@@ -1,9 +1,9 @@
-package com.skss.test.action;
+package com.skss.app.web;
 
 import javax.annotation.Resource;
 import com.skss.iframe.web.ActionUtil;
-import com.skss.test.entity.SsOrg;
-import com.skss.test.service.SsOrgService;
+import com.skss.app.entity.SsOrg;
+import com.skss.app.service.SsOrgService;
 
 public class SsOrgAction extends ActionUtil<SsOrg, SsOrgAction>{
 
@@ -25,5 +25,8 @@ public class SsOrgAction extends ActionUtil<SsOrg, SsOrgAction>{
 	}
 	public void remove() {
 		ssOrgService.remove(model);
+	}
+	public void list() {		
+		this.sendJSON(ssOrgService.list(model, start, rows), ssOrgService.count());
 	}
 }

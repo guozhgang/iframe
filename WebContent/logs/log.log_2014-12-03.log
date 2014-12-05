@@ -1,0 +1,1008 @@
+2014-12-03 10:04:43 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 10:04:43 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:04:43 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:04:43 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:04:43 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:04:44 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 10:04:44 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:04:44 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:04:44 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:04:44 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:04:44 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:04:44 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:04:44 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:04:44 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:04:44 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:04:44 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:04:44 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 10:04:44 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 10:04:44 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 10:04:44 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 10:04:44 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 10:04:44 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 10:04:44 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 10:04:44 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 10:04:44 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:04:44 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 10:04:44 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 10:04:44 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 10:04:45 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:04:45 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:04:45 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:04:45 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:04:45 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:04:45 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 10:04:45 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:45 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 10:04:45 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:04:46 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 10:04:46 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 10:18:48 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 10:18:48 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:18:48 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:18:48 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:18:48 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:18:49 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 10:18:49 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:18:49 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:18:49 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:18:49 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:18:49 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:18:49 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:18:49 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:18:49 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:18:49 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:18:49 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:18:49 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 10:18:49 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 10:18:49 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 10:18:49 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 10:18:49 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 10:18:49 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 10:18:49 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 10:18:49 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 10:18:49 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:18:49 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 10:18:49 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 10:18:49 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:49 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:49 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:49 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:49 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:49 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:50 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:50 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 10:18:50 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:18:50 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:18:50 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:18:50 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:18:50 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:18:50 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 10:18:50 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:50 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 10:18:50 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:18:51 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 10:18:51 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 10:19:12 <closing> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 10:19:18 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 10:19:18 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:19:18 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:19:18 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:19:18 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 10:19:18 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 10:19:18 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:19:18 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:19:18 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:19:18 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:19:18 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:19:18 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:19:18 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:19:18 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:19:18 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 10:19:18 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 10:19:18 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 10:19:18 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 10:19:18 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 10:19:18 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 10:19:18 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 10:19:18 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 10:19:18 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 10:19:18 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 10:19:18 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:18 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 10:19:19 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 10:19:19 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 10:19:19 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 10:19:19 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:19:19 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:19:19 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:19:19 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 10:19:19 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 10:19:19 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 10:19:19 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:19 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 10:19:19 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 10:19:20 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 10:19:20 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 12:51:59 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 12:51:59 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 12:51:59 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 12:51:59 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 12:51:59 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 12:51:59 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 12:51:59 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 12:51:59 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 12:51:59 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 12:51:59 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 12:51:59 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 12:51:59 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 12:51:59 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 12:51:59 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 12:51:59 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 12:51:59 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 12:51:59 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 12:51:59 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 12:51:59 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 12:52:00 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 12:52:00 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 12:52:00 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 12:52:00 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 12:52:00 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 12:52:00 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 12:52:00 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 12:52:00 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 12:52:00 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 12:52:00 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 12:52:00 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 12:52:00 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 12:52:00 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 12:52:00 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 12:52:00 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 12:52:00 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:00 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 12:52:00 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 12:52:01 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 12:52:01 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 15:11:38 <模板保存失败：null> - [com.skss.iframe.entity.Template]  - INFO   
+2014-12-03 15:12:05 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 15:12:05 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:12:05 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:12:05 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:12:05 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:12:05 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 15:12:05 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:12:05 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:12:05 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:12:05 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:12:05 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:12:05 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:12:05 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:12:05 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:12:05 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:12:05 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:12:05 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 15:12:05 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 15:12:05 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 15:12:05 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:05 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:05 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 15:12:06 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 15:12:06 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 15:12:06 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 15:12:06 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 15:12:06 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:12:06 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 15:12:06 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 15:12:06 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 15:12:06 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:12:06 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:12:06 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:12:06 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:12:06 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:12:06 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 15:12:06 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:06 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 15:12:06 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:12:07 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 15:12:07 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 15:24:52 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 15:24:52 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:24:52 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:24:52 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:24:52 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:24:52 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 15:24:53 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:24:53 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:24:53 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:24:53 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:24:53 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:24:53 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:24:53 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:24:53 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:24:53 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:24:53 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:24:53 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 15:24:53 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 15:24:53 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 15:24:53 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 15:24:53 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 15:24:53 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 15:24:53 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 15:24:53 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 15:24:53 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:24:53 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 15:24:53 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 15:24:53 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:53 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:53 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:53 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:53 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:53 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:53 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:53 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 15:24:53 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:24:53 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:24:53 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:24:54 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:24:54 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:24:54 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 15:24:54 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:54 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 15:24:54 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:24:55 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 15:24:55 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 15:34:05 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 15:34:05 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:34:05 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:34:05 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:34:05 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 15:34:05 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 15:34:05 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:34:05 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:34:05 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:34:05 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:34:05 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:34:05 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:34:05 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:34:05 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:34:05 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 15:34:05 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 15:34:06 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 15:34:06 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 15:34:06 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 15:34:06 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 15:34:06 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 15:34:06 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 15:34:06 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 15:34:06 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 15:34:06 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 15:34:06 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 15:34:06 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 15:34:06 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 15:34:06 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:34:06 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:34:06 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:34:06 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 15:34:06 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 15:34:06 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 15:34:06 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:06 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 15:34:06 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 15:34:07 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 15:34:07 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 15:53:16 <模板保存失败：null> - [com.skss.iframe.entity.Template]  - INFO   
+2014-12-03 15:57:26 <模板保存失败：null> - [com.skss.iframe.entity.Template]  - INFO   
+2014-12-03 16:22:41 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 16:22:41 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:22:41 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:22:41 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:22:41 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:22:41 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 16:22:41 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:22:41 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:22:41 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:22:41 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:22:41 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:22:41 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:22:41 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:22:41 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:22:41 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:22:41 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:22:41 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 16:22:41 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 16:22:41 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 16:22:42 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 16:22:42 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 16:22:42 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 16:22:42 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 16:22:42 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 16:22:42 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:22:42 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 16:22:42 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 16:22:42 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 16:22:42 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:22:42 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:22:42 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:22:42 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:22:42 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:22:42 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 16:22:42 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:42 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 16:22:42 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:22:43 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 16:22:43 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 16:25:12 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 16:25:12 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:25:12 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:25:12 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:25:12 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:25:12 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 16:25:12 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:25:12 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:25:12 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:25:12 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:25:12 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:25:12 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:25:12 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:25:12 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:25:12 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:25:12 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:25:13 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 16:25:13 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 16:25:13 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 16:25:13 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 16:25:13 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 16:25:13 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 16:25:13 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 16:25:13 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 16:25:13 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:25:13 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 16:25:13 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 16:25:13 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 16:25:13 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:25:13 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:25:13 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:25:13 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:25:13 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:25:13 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 16:25:13 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:13 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 16:25:13 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:25:14 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 16:25:14 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 16:32:31 <Hibernate Annotations 3.4.0.GA> - [org.hibernate.cfg.annotations.Version]  - INFO   
+2014-12-03 16:32:31 <Hibernate 3.3.2.GA> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:32:31 <hibernate.properties not found> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:32:31 <Bytecode provider name : javassist> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:32:31 <using JDK 1.4 java.sql.Timestamp handling> - [org.hibernate.cfg.Environment]  - INFO   
+2014-12-03 16:32:31 <Hibernate Commons Annotations 3.1.0.GA> - [org.hibernate.annotations.common.Version]  - INFO   
+2014-12-03 16:32:31 <Binding entity from annotated class: com.skss.app.entity.Menu> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:32:31 <Bind entity com.skss.app.entity.Menu on table ss_menu> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:32:31 <Binding entity from annotated class: com.skss.app.entity.Organization> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:32:31 <Bind entity com.skss.app.entity.Organization on table SS_ORG> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:32:31 <Binding entity from annotated class: com.skss.app.entity.Role> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:32:31 <Bind entity com.skss.app.entity.Role on table SS_ROLE> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:32:31 <Binding entity from annotated class: com.skss.app.entity.Test> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:32:31 <Bind entity com.skss.app.entity.Test on table test> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:32:31 <Binding entity from annotated class: com.skss.app.entity.User> - [org.hibernate.cfg.AnnotationBinder]  - INFO   
+2014-12-03 16:32:31 <Bind entity com.skss.app.entity.User on table SS_USER> - [org.hibernate.cfg.annotations.EntityBinder]  - INFO   
+2014-12-03 16:32:32 <Hibernate Validator 3.1.0.GA> - [org.hibernate.validator.Version]  - INFO   
+2014-12-03 16:32:32 <Unable to find org.hibernate.search.event.FullTextIndexEventListener on the classpath. Hibernate Search is not enabled.> - [org.hibernate.cfg.search.HibernateSearchEventListenerRegister]  - INFO   
+2014-12-03 16:32:32 <Initializing connection provider: org.springframework.orm.hibernate3.LocalDataSourceConnectionProvider> - [org.hibernate.connection.ConnectionProviderFactory]  - INFO   
+2014-12-03 16:32:32 <RDBMS: MySQL, version: 5.6.11> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <JDBC driver: MySQL-AB JDBC Driver, version: mysql-connector-java-5.1.13 ( Revision: ${bzr.revision-id} )> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Using dialect: org.hibernate.dialect.MySQLDialect> - [org.hibernate.dialect.Dialect]  - INFO   
+2014-12-03 16:32:32 <Transaction strategy: org.springframework.orm.hibernate3.SpringTransactionFactory> - [org.hibernate.transaction.TransactionFactoryFactory]  - INFO   
+2014-12-03 16:32:32 <No TransactionManagerLookup configured (in JTA environment, use of read-write or transactional second-level cache is not recommended)> - [org.hibernate.transaction.TransactionManagerLookupFactory]  - INFO   
+2014-12-03 16:32:32 <Automatic flush during beforeCompletion(): disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Automatic session close at end of transaction: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <JDBC batch size: 15> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <JDBC batch updates for versioned data: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Scrollable result sets: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <JDBC3 getGeneratedKeys(): enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Connection release mode: auto> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Maximum outer join fetch depth: 2> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Default batch fetch size: 1> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Generate SQL with comments: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Order SQL updates by primary key: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Order SQL inserts for batching: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Query translator: org.hibernate.hql.ast.ASTQueryTranslatorFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Using ASTQueryTranslatorFactory> - [org.hibernate.hql.ast.ASTQueryTranslatorFactory]  - INFO   
+2014-12-03 16:32:32 <Query language substitutions: {}> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <JPA-QL strict compliance: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Second-level cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Query cache: enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Cache region factory : org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Cache provider: org.hibernate.cache.EhCacheProvider> - [org.hibernate.cache.impl.bridge.RegionFactoryCacheProviderBridge]  - INFO   
+2014-12-03 16:32:32 <Optimize cache for minimal puts: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Structured second-level cache entries: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Query cache factory: org.hibernate.cache.StandardQueryCacheFactory> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Echoing all SQL to stdout> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Statistics: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Deleted entity synthetic identifier rollback: disabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Default entity-mode: pojo> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <Named query checking : enabled> - [org.hibernate.cfg.SettingsFactory]  - INFO   
+2014-12-03 16:32:32 <building session factory> - [org.hibernate.impl.SessionFactoryImpl]  - INFO   
+2014-12-03 16:32:32 <No configuration found. Configuring ehcache from ehcache-failsafe.xml  found in the classpath: jar:file:/F:/workspace/iframe/WebContent/WEB-INF/lib/ehcache-1.2.3.jar!/ehcache-failsafe.xml> - [net.sf.ehcache.config.ConfigurationFactory]  - WARN   
+2014-12-03 16:32:32 <Could not find configuration [com.skss.app.entity.User]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <Could not find configuration [com.skss.app.entity.Organization]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <Could not find configuration [com.skss.app.entity.Test]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <Could not find configuration [com.skss.app.entity.Role]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <Could not find configuration [com.skss.app.entity.Menu]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <Could not find configuration [com.skss.app.entity.Role.menuList]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <Could not find configuration [com.skss.app.entity.User.roles]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <Not binding factory to JNDI, no JNDI name configured> - [org.hibernate.impl.SessionFactoryObjectFactory]  - INFO   
+2014-12-03 16:32:32 <Running hbm2ddl schema update> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:32:32 <fetching database metadata> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:32:32 <updating schema> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:32:32 <table found: app.ss_org> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <columns: [id, name, parent, code]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <table found: app.ss_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <columns: [id, role_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <table found: app.ss_role_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <columns: [menu_id, role_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <foreign keys: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <indexes: [fk27deb469749e780f, fk27deb4695b2fe36f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <table found: app.ss_user> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <columns: [id, user_name, organization, login_name, password]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <foreign keys: [fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <indexes: [primary, fkb9aa0e4ac3fc577b]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <table found: app.ss_user_role> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <columns: [role_id, user_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <foreign keys: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <indexes: [fk2816814b19c93bef, fk2816814b749e780f]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <table found: app.ss_menu> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <columns: [id, text, description, parent, node_id]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <indexes: [primary]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <table found: app.test> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <columns: [id, test_name]> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <foreign keys: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <indexes: []> - [org.hibernate.tool.hbm2ddl.TableMetadata]  - INFO   
+2014-12-03 16:32:32 <schema update complete> - [org.hibernate.tool.hbm2ddl.SchemaUpdate]  - INFO   
+2014-12-03 16:32:32 <starting update timestamps cache at region: org.hibernate.cache.UpdateTimestampsCache> - [org.hibernate.cache.UpdateTimestampsCache]  - INFO   
+2014-12-03 16:32:32 <Could not find configuration [org.hibernate.cache.UpdateTimestampsCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:32 <starting query cache at region: org.hibernate.cache.StandardQueryCache> - [org.hibernate.cache.StandardQueryCache]  - INFO   
+2014-12-03 16:32:32 <Could not find configuration [org.hibernate.cache.StandardQueryCache]; using defaults.> - [org.hibernate.cache.EhCacheProvider]  - WARN   
+2014-12-03 16:32:33 <Initializing Struts-Spring integration...> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 16:32:33 <... initialized Struts-Spring integration successfully> - [org.apache.struts2.spring.StrutsSpringObjectFactory]  - INFO   
+2014-12-03 17:47:59 <文件发布成功> - [com.skss.iframe.entity.Template]  - INFO   
+2014-12-03 17:47:59 <文件发布成功> - [com.skss.iframe.entity.Template]  - INFO   
+2014-12-03 17:48:53 <文件发布成功> - [com.skss.iframe.entity.Template]  - INFO   
+2014-12-03 17:48:53 <文件发布成功> - [com.skss.iframe.entity.Template]  - INFO   

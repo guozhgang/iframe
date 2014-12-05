@@ -24,7 +24,12 @@ public class ${className} extends ActionUtil<${entityName}, ${className}>{
 		}
 	}
 	public void remove() {
-		${serviceModelName}.remove(model);
+		try {
+			${serviceModelName}.remove(model);
+			this.sendSuccess();
+		} catch (Exception e) {
+			this.sendFailure();
+		}
 	}
 	public void list() {		
 		this.sendJSON(${serviceModelName}.list(model, start, rows), ${serviceModelName}.count());

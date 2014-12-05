@@ -1,4 +1,4 @@
-package com.skss.test.entity;
+package com.skss.app.entity;
 
 import javax.persistence.Column;
 import javax.persistence.Entity;
@@ -13,17 +13,10 @@ import com.skss.iframe.entity.IdEntity;
 @Table(name = "ss_org")
 @Cache(usage = CacheConcurrencyStrategy.READ_WRITE)
 public class SsOrg extends IdEntity{
-	private String id;
+	
 	private String code;
 	private String parent;
 	private String name;
-	@Column(name = "id")
-	public String getId() {
-		return id;
-	}
-	public void setId(String id) {
-		this.id = id;
-	}
 	@Column(name = "code")
 	public String getCode() {
 		return code;

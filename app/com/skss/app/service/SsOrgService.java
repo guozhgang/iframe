@@ -1,12 +1,14 @@
-package com.skss.test.service;
+package com.skss.app.service;
 
 
 import javax.annotation.Resource;
 
 import org.springframework.stereotype.Service;
 
-import com.skss.test.dao.SsOrgDao;
-import com.skss.test.entity.SsOrg;
+import com.skss.app.dao.SsOrgDao;
+import com.skss.app.entity.SsOrg;
+import java.util.ArrayList;
+import java.util.List;
 
 @Service
 public class SsOrgService {
@@ -21,5 +23,12 @@ public class SsOrgService {
 	}
 	public void remove(SsOrg ssOrg) {
 		ssOrgDao.remove(ssOrg);
+	}
+	public List<SsOrg> list(SsOrg ssOrg, int start, int limit) {
+		StringBuilder hql = new StringBuilder("from SsOrg i where 1 = 1 ");
+		return ssOrgDao.list(hql.toString(), start, limit);
+	}
+	public int count() {
+		return ssOrgDao.count();
 	}
 }

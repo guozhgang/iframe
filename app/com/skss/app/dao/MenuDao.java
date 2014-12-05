@@ -14,8 +14,8 @@ public class MenuDao extends BaseDao<Menu> {
 	}
 
 	public int findCount(String id) {
-		return getCountByHql("select count(i) from Menu i where i.parent = "
-				+ id);
+		return getCountByHql("select count(i) from Menu i where i.parent = '"
+				+ id + "'");
 	}
 
 	public void saveMenu(Menu menu) {
